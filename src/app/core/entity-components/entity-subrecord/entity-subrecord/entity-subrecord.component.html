@@ -53,7 +53,11 @@
   </ng-container>
 
   <ng-container matColumnDef="actions">
-    <th mat-header-cell *matHeaderCellDef [class.remove-padding-left]="editable">
+    <th
+      mat-header-cell
+      *matHeaderCellDef
+      [class.remove-padding-left]="editable"
+    >
       <ng-container *ngIf="editable">
         <button
           mat-icon-button
@@ -83,10 +87,7 @@
             }"
             (click)="edit(rec)"
           >
-            <fa-icon
-              aria-label="edit"
-              icon="pen"
-            ></fa-icon>
+            <fa-icon aria-label="edit" icon="pen"></fa-icon>
           </button>
         </ng-container>
         <ng-container *ngIf="rec.formGroup?.enabled">
@@ -97,10 +98,7 @@
             [angularticsCategory]="rec?.record?.getType()"
             angularticsAction="subrecord_inlineedit_save"
           >
-            <fa-icon
-              aria-label="save"
-              icon="check-circle"
-            ></fa-icon>
+            <fa-icon aria-label="save" icon="check-circle"></fa-icon>
           </button>
           <button
             mat-icon-button
@@ -109,10 +107,7 @@
             [angularticsCategory]="rec?.record?.getType()"
             angularticsAction="subrecord_inlineedit_cancel"
           >
-            <fa-icon
-              aria-label="cancel"
-              icon="times-circle"
-            ></fa-icon>
+            <fa-icon aria-label="cancel" icon="times-circle"></fa-icon>
           </button>
           <button
             mat-icon-button
@@ -125,10 +120,7 @@
             [angularticsCategory]="rec?.record?.getType()"
             angularticsAction="subrecord_inlineedit_delete"
           >
-            <fa-icon
-              aria-label="delete"
-              icon="trash"
-            ></fa-icon>
+            <fa-icon aria-label="delete" icon="trash"></fa-icon>
           </button>
         </ng-container>
       </div>

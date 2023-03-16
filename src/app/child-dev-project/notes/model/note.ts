@@ -85,18 +85,25 @@ export class Note extends Entity {
    *
    * No direct access to change this property. Use the `.getAttendance()` method to have safe access.
    */
-  @DatabaseField({ innerDataType: "schema-embed", additional: EventAttendance })
+  @DatabaseField({
+    innerDataType: "schema-embed",
+    additional: EventAttendance,
+    label: "test1",
+  })
   private childrenAttendance: Map<string, EventAttendance> = new Map();
 
   @DatabaseField({ label: $localize`:Label for the date of a note:Date` })
   date: Date;
   @DatabaseField({ label: $localize`:Label for the subject of a note:Subject` })
   subject: string = "";
+  @DatabaseField({ label: $localize`:Label for the subject of a note:Subject` })
+  subject2: string = "";
   @DatabaseField({
     label: $localize`:Label for the actual notes of a note:Notes`,
     editComponent: "EditLongText",
   })
   text: string = "";
+
   /** IDs of users that authored this note */
   @DatabaseField({
     label: $localize`:Label for the social worker(s) who created the note:SW`,

@@ -194,7 +194,8 @@ export const defaultJsonConfig = {
               "subject",
               "category",
               "authors",
-              "children"
+              "children",
+              "childrenAttendance"
             ]
           },
           {
