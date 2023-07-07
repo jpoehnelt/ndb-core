@@ -1,0 +1,830 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ndb-core documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">ndb-core documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Classes</li>
+  <li class="breadcrumb-item" >DateFilter</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/core/filter/filters/filters.ts</code>
+        </p>
+
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Represents a filter for date values.
+The filter can either be one of the predefined options or two manually entered dates.</p>
+
+            </p>
+
+            <p class="comment">
+                <h3>Extends</h3>
+            </p>
+            <p class="comment">
+                        <code><a href="../classes/Filter.html" target="_self" >Filter</a></code>
+            </p>
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#label" >label</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#name" >name</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#rangeOptions" >rangeOptions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#selectedOption" >selectedOption</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getDateRange" >getDateRange</a>
+                            </li>
+                            <li>
+                                <a href="#getFilter" >getFilter</a>
+                            </li>
+                            <li>
+                                <a href="#getSelectedOption" >getSelectedOption</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, label: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, rangeOptions: DateRangeFilterConfigOption[])</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/core/filter/filters/filters.ts:42</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>name</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>label</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>rangeOptions</td>
+                                                  
+                                                        <td>
+                                                                    <code>DateRangeFilterConfigOption[]</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="label"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>label</b></span>
+                        <a href="#label"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>name</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../classes/Filter.html" target="_self" >Filter</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../classes/Filter.html#source" target="_self" >Filter:45</a></code>
+</div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="name"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>name</b></span>
+                        <a href="#name"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../classes/Filter.html" target="_self" >Filter</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../classes/Filter.html#source" target="_self" >Filter:44</a></code>
+</div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rangeOptions"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>rangeOptions</b></span>
+                        <a href="#rangeOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>DateRangeFilterConfigOption[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/core/filter/filters/filters.ts:46</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedOption"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>selectedOption</b></span>
+                        <a href="#selectedOption"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Inherited from         <code><a href="../classes/Filter.html" target="_self" >Filter</a></code>
+</div>
+                            </td>
+                        </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in         <code><a href="../classes/Filter.html#source" target="_self" >Filter:31</a></code>
+</div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDateRange"></a>
+                    <span class="name">
+                        <span ><b>getDateRange</b></span>
+                        <a href="#getDateRange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getDateRange()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/app/core/filter/filters/filters.ts:55</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Returns the date range according to the selected option or dates</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>DateRange&lt;Date&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getFilter"></a>
+                    <span class="name">
+                        <span ><b>getFilter</b></span>
+                        <a href="#getFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getFilter()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/Filter.html" target="_self" >Filter</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/Filter.html#source" target="_self" >Filter:70</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Filter.html" target="_self" >DataFilter&lt;T&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSelectedOption"></a>
+                    <span class="name">
+                        <span ><b>getSelectedOption</b></span>
+                        <a href="#getSelectedOption"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getSelectedOption()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/app/core/filter/filters/filters.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ConfigurableEnumValue } from &quot;app/core/configurable-enum/configurable-enum.interface&quot;;
+import {
+  BooleanFilterConfig,
+  DateRangeFilterConfigOption,
+} from &quot;app/core/entity-components/entity-list/EntityListConfig&quot;;
+import { DataFilter } from &quot;../../entity-components/entity-subrecord/entity-subrecord/entity-subrecord-config&quot;;
+import { Entity } from &quot;../../entity/model/entity&quot;;
+import { DateRange } from &quot;@angular/material/datepicker&quot;;
+import { isValidDate } from &quot;../../../utils/utils&quot;;
+import { calculateDateRange } from &quot;../date-range-filter/date-range-filter-panel/date-range-filter-panel.component&quot;;
+import moment from &quot;moment/moment&quot;;
+
+export abstract class Filter&lt;T extends Entity&gt; {
+  public selectedOption: string;
+
+  constructor(public name: string, public label: string &#x3D; name) {}
+
+  abstract getFilter(): DataFilter&lt;T&gt;;
+}
+
+/**
+ * Represents a filter for date values.
+ * The filter can either be one of the predefined options or two manually entered dates.
+ */
+export class DateFilter&lt;T extends Entity&gt; extends Filter&lt;T&gt; {
+  constructor(
+    public name: string,
+    public label: string &#x3D; name,
+    public rangeOptions: DateRangeFilterConfigOption[]
+  ) {
+    super(name, label);
+    this.selectedOption &#x3D; &quot;1&quot;;
+  }
+
+  /**
+   * Returns the date range according to the selected option or dates
+   */
+  getDateRange(): DateRange&lt;Date&gt; {
+    if (this.getSelectedOption()) {
+      return calculateDateRange(this.getSelectedOption());
+    }
+    const dates &#x3D; this.selectedOption?.split(&quot;_&quot;);
+    if (dates?.length &#x3D;&#x3D; 2) {
+      const firstDate &#x3D; new Date(dates[0]);
+      const secondDate &#x3D; new Date(dates[1]);
+      if (isValidDate(firstDate) &amp;&amp; isValidDate(secondDate)) {
+        return new DateRange(firstDate, secondDate);
+      }
+    }
+    return new DateRange(undefined, undefined);
+  }
+
+  getFilter(): DataFilter&lt;T&gt; {
+    const range &#x3D; this.getDateRange();
+    if (range.start &amp;&amp; range.end) {
+      return {
+        [this.name]: {
+          $gte: moment(range.start).format(&quot;YYYY-MM-DD&quot;),
+          $lte: moment(range.end).format(&quot;YYYY-MM-DD&quot;),
+        },
+      } as DataFilter&lt;T&gt;;
+    }
+  }
+
+  getSelectedOption() {
+    return this.rangeOptions[this.selectedOption as any];
+  }
+}
+
+/**
+ * Generic configuration for a filter with different selectable {@link FilterSelectionOption} options.
+ *
+ * This is a reusable format for any kind of dropdown or selection component that offers the user a choice
+ * to narrow down a list of data items.
+ * As the filter function is provided as part of each {@link FilterSelectionOption}
+ * an instance of this FilterSelection class can manage all filter selection logic.
+ */
+export class SelectableFilter&lt;T extends Entity&gt; extends Filter&lt;T&gt; {
+  /**
+   * Generate filter options dynamically from the given value to be matched.
+   *
+   * This is a utility function to make it easier to generate {@link FilterSelectionOption}s for standard cases
+   * if you simply want each option to filter items having the given attribute matching different values.
+   * If you have more sophisticated filtering needs, use the constructor to set {@link FilterSelectionOption}s that
+   * you created yourself.
+   *
+   * @param valuesToMatchAsOptions An array of values to be matched.
+   *        A separate FilterSelectionOption is created for each value with a filter
+   *        that is true of a data item&#x27;s property exactly matches that value.
+   * @param attributeName The name of the property of a data item that is compared to the value in the filter function.
+   */
+  public static generateOptions&lt;T extends Entity&gt;(
+    valuesToMatchAsOptions: string[],
+    attributeName: string
+  ): FilterSelectionOption&lt;T&gt;[] {
+    const options &#x3D; [
+      {
+        key: &quot;&quot;,
+        label: $localize&#x60;:generic filter option showing all entries:All&#x60;,
+        filter: {} as DataFilter&lt;T&gt;,
+      },
+    ];
+
+    options.push(
+      ...valuesToMatchAsOptions
+        .filter((k) &#x3D;&gt; !!k)
+        .map((k) &#x3D;&gt; ({
+          key: k.toLowerCase(),
+          label: k.toString(),
+          filter: { [attributeName]: k } as DataFilter&lt;T&gt;,
+        }))
+    );
+
+    return options;
+  }
+
+  /**
+   * Create a FilterSelection with different options to be selected.
+   * @param name The name or id describing this filter
+   * @param options An array of different filtering variants to chose between
+   * @param label The user-friendly label describing this filter-selection
+   * (optional, defaults to the name of the selection)
+   */
+  constructor(
+    public name: string,
+    public options: FilterSelectionOption&lt;T&gt;[],
+    public label: string &#x3D; name
+  ) {
+    super(name, label);
+    this.selectedOption &#x3D; this.options[0]?.key;
+  }
+
+  /** default filter will keep all items in the result */
+  defaultFilter &#x3D; {};
+
+  /**
+   * Get the full filter option by its key.
+   * @param key The identifier of the requested option
+   */
+  getOption(key: string): FilterSelectionOption&lt;T&gt; {
+    return this.options.find((option) &#x3D;&gt; option.key &#x3D;&#x3D;&#x3D; key);
+  }
+
+  /**
+   * Get the filter query for the given option.
+   * If the given key is undefined or invalid, the returned filter matches any elements.
+   */
+  public getFilter(): DataFilter&lt;T&gt; {
+    const option &#x3D; this.getOption(this.selectedOption);
+
+    if (!option) {
+      return this.defaultFilter as DataFilter&lt;T&gt;;
+    } else {
+      return option.filter;
+    }
+  }
+}
+
+export class BooleanFilter&lt;T extends Entity&gt; extends SelectableFilter&lt;T&gt; {
+  constructor(name: string, label: string, config?: BooleanFilterConfig) {
+    super(
+      name,
+      [
+        {
+          key: &quot;all&quot;,
+          label: config.all ?? $localize&#x60;:Filter label:All&#x60;,
+          filter: {},
+        },
+        {
+          key: &quot;true&quot;,
+          label:
+            config.true ?? $localize&#x60;:Filter label default boolean true:Yes&#x60;,
+          filter: { [config.id]: true },
+        },
+        {
+          key: &quot;false&quot;,
+          label:
+            config.false ?? $localize&#x60;:Filter label default boolean true:No&#x60;,
+          filter: { [config.id]: false },
+        },
+      ],
+      label
+    );
+  }
+}
+
+export class ConfigurableEnumFilter&lt;
+  T extends Entity
+&gt; extends SelectableFilter&lt;T&gt; {
+  constructor(
+    name: string,
+    label: string,
+    enumValues: ConfigurableEnumValue[]
+  ) {
+    let options: FilterSelectionOption&lt;T&gt;[] &#x3D; [
+      {
+        key: &quot;all&quot;,
+        label: $localize&#x60;:Filter label:All&#x60;,
+        filter: {},
+      },
+    ];
+    options.push(
+      ...enumValues.map((enumValue) &#x3D;&gt; ({
+        key: enumValue.id,
+        label: enumValue.label,
+        color: enumValue.color,
+        filter: { [name + &quot;.id&quot;]: enumValue.id },
+      }))
+    );
+    super(name, options, label);
+  }
+}
+
+export class EntityFilter&lt;T extends Entity&gt; extends SelectableFilter&lt;T&gt; {
+  constructor(name: string, label: string, filterEntities) {
+    filterEntities.sort((a, b) &#x3D;&gt; a.toString().localeCompare(b.toString()));
+    const options: FilterSelectionOption&lt;T&gt;[] &#x3D; [
+      {
+        key: &quot;all&quot;,
+        label: $localize&#x60;:Filter label:All&#x60;,
+        filter: {},
+      },
+    ];
+    options.push(
+      ...filterEntities.map((filterEntity) &#x3D;&gt; ({
+        key: filterEntity.getId(),
+        label: filterEntity.toString(),
+        filter: {
+          $or: [
+            { [name]: filterEntity.getId() },
+            { [name]: { $elemMatch: { $eq: filterEntity.getId() } } },
+          ],
+        },
+      }))
+    );
+    super(name, options, label);
+  }
+}
+
+/**
+ * Represents one specific option to filter data in a certain way.
+ * used by {@link SelectableFilter}
+ */
+export interface FilterSelectionOption&lt;T&gt; {
+  /** identifier for this option in the parent FilterSelection instance */
+  key: string;
+
+  /** label displayed for this option to the user in the UI */
+  label: string;
+
+  /** Optional color */
+  color?: string;
+
+  /**
+   * The filter query which should be used if this filter is selected
+   */
+  filter: DataFilter&lt;T&gt; | any;
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'DateFilter.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

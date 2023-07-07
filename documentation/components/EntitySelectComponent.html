@@ -1,0 +1,1967 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ndb-core documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">ndb-core documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  EntitySelectComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnChanges</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-entity-select</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">Standalone</td>
+                <td class="col-md-9"><code>true</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">imports</td>
+                <td class="col-md-9">
+                            <code>MatFormFieldModule</code>
+                            <code>NgIf</code>
+                            <code>ReactiveFormsModule</code>
+                            <code>MatAutocompleteModule</code>
+                            <code>MatChipsModule</code>
+                            <code>NgForOf</code>
+                                <code><a href="../components/DisplayEntityComponent.html" target="_self" >DisplayEntityComponent</a></code>
+                            <code>FontAwesomeModule</code>
+                            <code>MatTooltipModule</code>
+                            <code>MatInputModule</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./entity-select.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./entity-select.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#allEntities" >allEntities</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                <a href="#autocomplete" >autocomplete</a>
+                            </li>
+                            <li>
+                                <a href="#filteredEntities" >filteredEntities</a>
+                            </li>
+                            <li>
+                                <a href="#formControl" >formControl</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                <a href="#inputField" >inputField</a>
+                            </li>
+                            <li>
+                                <a href="#inputPlaceholder" >inputPlaceholder</a>
+                            </li>
+                            <li>
+                                <a href="#loading" >loading</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#loadingPlaceholder" >loadingPlaceholder</a>
+                            </li>
+                            <li>
+                                <a href="#selectedEntities" >selectedEntities</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#separatorKeysCodes" >separatorKeysCodes</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#select" >select</a>
+                            </li>
+                            <li>
+                                <a href="#selectEntity" >selectEntity</a>
+                            </li>
+                            <li>
+                                <a href="#unselectEntity" >unselectEntity</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#accessor" >accessor</a>
+                            </li>
+                            <li>
+                                <a href="#additionalFilter" >additionalFilter</a>
+                            </li>
+                            <li>
+                                <a href="#disabled" >disabled</a>
+                            </li>
+                            <li>
+                                <a href="#entityType" >entityType</a>
+                            </li>
+                            <li>
+                                <a href="#label" >label</a>
+                            </li>
+                            <li>
+                                <a href="#placeholder" >placeholder</a>
+                            </li>
+                            <li>
+                                <a href="#removable" >removable</a>
+                            </li>
+                            <li>
+                                <a href="#selectable" >selectable</a>
+                            </li>
+                            <li>
+                                <a href="#selection" >selection</a>
+                            </li>
+                            <li>
+                                <a href="#showEntities" >showEntities</a>
+                            </li>
+                            <li>
+                                <a href="#withPrefix" >withPrefix</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#selectionChange" >selectionChange</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#entityType" >entityType</a>
+                                </li>
+                                <li>
+                                    <a href="#selection" >selection</a>
+                                </li>
+                                <li>
+                                    <a href="#disabled" >disabled</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(entityMapperService: <a href="../injectables/EntityMapperService.html" target="_self">EntityMapperService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="163" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:163</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>entityMapperService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/EntityMapperService.html" target="_self" >EntityMapperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section data-compodoc="block-inputs">
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="accessor"></a>
+                        <b>accessor</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>(e) &#x3D;&gt; e.toString()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="195" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:195</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The accessor used for filtering and when selecting a new
+entity.
+<br> Per default, this filters for the name. If the entity
+has no name, this filters for the entity&#39;s id.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="additionalFilter"></a>
+                        <b>additionalFilter</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>(_) &#x3D;&gt; true</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="197" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:197</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="disabled"></a>
+                        <b>disabled</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="141" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:141</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Setting the disabled state of the input element</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="entityType"></a>
+                        <b>entityType</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string | []</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:67</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The entity-type (e.g. &#39;Child&#39;, &#39;School&#39;, e.t.c.) to set.
+            that displays the entities. Can be an array giving multiple types.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="label"></a>
+                        <b>label</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="110" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:110</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The label is what is seen above the list. For example when used
+in the note-details-view, this is &quot;Children&quot;</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="placeholder"></a>
+                        <b>placeholder</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="117" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:117</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The placeholder is what is seen when someone clicks into the input-
+field and adds new entities.
+In the note-details-view, this is &quot;Add children...&quot;
+The placeholder is only displayed if <code>loading === false</code></p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="removable"></a>
+                        <b>removable</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="127" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:127</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Whether or not single chips (entity-views) are removable.
+If this is the case, they can be deleted.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectable"></a>
+                        <b>selectable</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="122" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:122</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Whether or not single chips (entity-views) are selectable.
+This currently has no specific meaning and defaults to <code>false</code></p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selection"></a>
+                        <b>selection</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:81</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The (initial) selection. Can be used in combination with <a href="selectionChange">selectionChange</a>
+to enable two-way binding to an array of strings corresponding to the id&#39;s of the entities.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showEntities"></a>
+                        <b>showEntities</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="135" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:135</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Whether or not to show entities in the list.
+Entities can still be selected using the autocomplete,
+and <a href="selection">selection</a> as well as <a href="selectionChange">selectionChange</a> will
+still work as expected</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="withPrefix"></a>
+                        <b>withPrefix</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:59</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Handle and emit ids including entity type prefix - default is false.
+If multiple <code>entityType</code>s are given, this automatically switches prefixes to be activated.</p>
+<p>TODO: make ids including prefix the default everywhere and remove this option (see #1526)</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+    <section data-compodoc="block-outputs">
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectionChange"></a>
+                        <b>selectionChange</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>EventEmitter</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="105" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:105</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>called whenever the selection changes.
+This happens when a new entity is being added or an existing
+one is removed</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="select"></a>
+                    <span class="name">
+                        <span ><b>select</b></span>
+                        <a href="#select"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>select(event: Pick<MatChipInputEvent | value>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="230"
+                            class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:230</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>called when a key code from <a href="separatorKeysCodes">separatorKeysCodes</a>
+is recorded and the user has entered a new entity-name (resp.
+whatever the accessor defines)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                            <code>Pick&lt;MatChipInputEvent | value&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the event to call this with</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectEntity"></a>
+                    <span class="name">
+                        <span ><b>selectEntity</b></span>
+                        <a href="#selectEntity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectEntity(entity: E)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="216"
+                            class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:216</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>selects a given entity and emits values</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>entity</td>
+                                    <td>
+                                            <code>E</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the entity to select</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unselectEntity"></a>
+                    <span class="name">
+                        <span ><b>unselectEntity</b></span>
+                        <a href="#unselectEntity"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>unselectEntity(entity: E)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="268"
+                            class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:268</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>removes a given entity from the records (if it exists) and emits changes</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>entity</td>
+                                    <td>
+                                            <code>E</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The entity to remove</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="allEntities"></a>
+                    <span class="name">
+                        <span ><b>allEntities</b></span>
+                        <a href="#allEntities"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>E[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="158" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:158</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="autocomplete"></a>
+                    <span class="name">
+                            <span class="modifier"></span>
+                        <span ><b>autocomplete</b></span>
+                        <a href="#autocomplete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MatAutocompleteTrigger</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(MatAutocompleteTrigger)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="163" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:163</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filteredEntities"></a>
+                    <span class="name">
+                        <span ><b>filteredEntities</b></span>
+                        <a href="#filteredEntities"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>E[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="159" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:159</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="formControl"></a>
+                    <span class="name">
+                        <span ><b>formControl</b></span>
+                        <a href="#formControl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new FormControl(&quot;&quot;)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="160" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:160</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="inputField"></a>
+                    <span class="name">
+                            <span class="modifier"></span>
+                        <span ><b>inputField</b></span>
+                        <a href="#inputField"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>ElementRef&lt;HTMLInputElement&gt;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;inputField&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="162" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:162</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="inputPlaceholder"></a>
+                    <span class="name">
+                        <span ><b>inputPlaceholder</b></span>
+                        <a href="#inputPlaceholder"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this.loadingPlaceholder</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="156" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:156</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loading"></a>
+                    <span class="name">
+                        <span ><b>loading</b></span>
+                        <a href="#loading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BehaviorSubject(true)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="154" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:154</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>true when this is loading and false when it&#39;s ready.
+This subject&#39;s state reflects the actual loading resp. the &#39;readiness&#39;-
+state of this component. Will trigger once loading is done</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadingPlaceholder"></a>
+                    <span class="name">
+                            <span class="modifier">Readonly</span>
+                        <span ><b>loadingPlaceholder</b></span>
+                        <a href="#loadingPlaceholder"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>$localize&#x60;:A placeholder for the input element when select options are not loaded yet:loading...&#x60;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:51</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedEntities"></a>
+                    <span class="name">
+                        <span ><b>selectedEntities</b></span>
+                        <a href="#selectedEntities"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>E[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="99" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:99</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Underlying data-array</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="separatorKeysCodes"></a>
+                    <span class="name">
+                            <span class="modifier">Readonly</span>
+                        <span ><b>separatorKeysCodes</b></span>
+                        <a href="#separatorKeysCodes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>number[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[ENTER, COMMA]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:50</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-accessors">
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="entityType"></a>
+                        <span class="name"><b>entityType</b><a href="#entityType"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>entityType(type: string | string[])</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:67</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>The entity-type (e.g. &#39;Child&#39;, &#39;School&#39;, e.t.c.) to set.
+            that displays the entities. Can be an array giving multiple types.</p>
+</div>
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                        <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>type</td>
+                                                    
+                                                            <td>
+                                                                        <code>string | string[]</code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                            <td>
+                                                                    <p>The ENTITY_TYPE of a Entity. This affects the entities which will be loaded and the component
+that displays the entities. Can be an array giving multiple types.</p>
+
+                                                            </td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selection"></a>
+                        <span class="name"><b>selection</b><a href="#selection"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>selection(sel: string[])</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:81</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>The (initial) selection. Can be used in combination with <a href="selectionChange">selectionChange</a>
+to enable two-way binding to an array of strings corresponding to the id&#39;s of the entities.</p>
+</div>
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                        <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>sel</td>
+                                                    
+                                                            <td>
+                                                                        <code>string[]</code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                            <td>
+                                                                    <p>The initial selection</p>
+
+                                                            </td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="disabled"></a>
+                        <span class="name"><b>disabled</b><a href="#disabled"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>disabled(disabled: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="141" class="link-to-prism">src/app/core/entity-components/entity-select/entity-select/entity-select.component.ts:141</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Setting the disabled state of the input element</p>
+</div>
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                        <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>disabled</td>
+                                                    
+                                                            <td>
+                                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                            <td>
+                                                                    <p>whether the input element should be disabled</p>
+
+                                                            </td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  Component,
+  ElementRef,
+  EventEmitter,
+  Input,
+  OnChanges,
+  Output,
+  SimpleChanges,
+  ViewChild,
+} from &quot;@angular/core&quot;;
+import { COMMA, ENTER } from &quot;@angular/cdk/keycodes&quot;;
+import { Entity } from &quot;../../../entity/model/entity&quot;;
+import { BehaviorSubject } from &quot;rxjs&quot;;
+import { FormControl, ReactiveFormsModule } from &quot;@angular/forms&quot;;
+import { filter, map } from &quot;rxjs/operators&quot;;
+import { MatChipInputEvent, MatChipsModule } from &quot;@angular/material/chips&quot;;
+import {
+  MatAutocompleteModule,
+  MatAutocompleteTrigger,
+} from &quot;@angular/material/autocomplete&quot;;
+import { UntilDestroy, untilDestroyed } from &quot;@ngneat/until-destroy&quot;;
+import { EntityMapperService } from &quot;../../../entity/entity-mapper.service&quot;;
+import { MatFormFieldModule } from &quot;@angular/material/form-field&quot;;
+import { NgForOf, NgIf } from &quot;@angular/common&quot;;
+import { DisplayEntityComponent } from &quot;../display-entity/display-entity.component&quot;;
+import { FontAwesomeModule } from &quot;@fortawesome/angular-fontawesome&quot;;
+import { MatTooltipModule } from &quot;@angular/material/tooltip&quot;;
+import { MatInputModule } from &quot;@angular/material/input&quot;;
+
+@Component({
+  selector: &quot;app-entity-select&quot;,
+  templateUrl: &quot;./entity-select.component.html&quot;,
+  styleUrls: [&quot;./entity-select.component.scss&quot;],
+  imports: [
+    MatFormFieldModule,
+    NgIf,
+    ReactiveFormsModule,
+    MatAutocompleteModule,
+    MatChipsModule,
+    NgForOf,
+    DisplayEntityComponent,
+    FontAwesomeModule,
+    MatTooltipModule,
+    MatInputModule,
+  ],
+  standalone: true,
+})
+@UntilDestroy()
+export class EntitySelectComponent&lt;E extends Entity&gt; implements OnChanges {
+  readonly separatorKeysCodes: number[] &#x3D; [ENTER, COMMA];
+  readonly loadingPlaceholder &#x3D; $localize&#x60;:A placeholder for the input element when select options are not loaded yet:loading...&#x60;;
+
+  /**
+   * Handle and emit ids including entity type prefix - default is false.
+   * If multiple &#x60;entityType&#x60;s are given, this automatically switches prefixes to be activated.
+   *
+   * TODO: make ids including prefix the default everywhere and remove this option (see #1526)
+   */
+  @Input() withPrefix: boolean &#x3D; false;
+
+  /**
+   * The entity-type (e.g. &#x27;Child&#x27;, &#x27;School&#x27;, e.t.c.) to set.
+   * @param type The ENTITY_TYPE of a Entity. This affects the entities which will be loaded and the component
+   *             that displays the entities. Can be an array giving multiple types.
+   * @throws Error when &#x60;type&#x60; is not in the entity-map
+   */
+  @Input() set entityType(type: string | string[]) {
+    if (Array.isArray(type)) {
+      this.withPrefix &#x3D; true;
+    } else {
+      type &#x3D; [type];
+    }
+    this.loadAvailableEntities(type);
+  }
+
+  /**
+   * The (initial) selection. Can be used in combination with {@link selectionChange}
+   * to enable two-way binding to an array of strings corresponding to the id&#x27;s of the entities.
+   * @param sel The initial selection
+   */
+  @Input() set selection(sel: string[]) {
+    if (!Array.isArray(sel)) {
+      this.selectedEntities &#x3D; [];
+      return;
+    }
+    this.loading
+      .pipe(
+        untilDestroyed(this),
+        filter((isLoading) &#x3D;&gt; !isLoading)
+      )
+      .subscribe((_) &#x3D;&gt; {
+        this.selectedEntities &#x3D; this.allEntities.filter((e) &#x3D;&gt;
+          sel.find((s) &#x3D;&gt; s &#x3D;&#x3D;&#x3D; e.getId(true) || s &#x3D;&#x3D;&#x3D; e.getId())
+        );
+      });
+  }
+
+  /** Underlying data-array */
+  selectedEntities: E[] &#x3D; [];
+  /**
+   * called whenever the selection changes.
+   * This happens when a new entity is being added or an existing
+   * one is removed
+   */
+  @Output() selectionChange &#x3D; new EventEmitter&lt;string[]&gt;();
+  /**
+   * The label is what is seen above the list. For example when used
+   * in the note-details-view, this is &quot;Children&quot;
+   */
+  @Input() label: string;
+  /**
+   * The placeholder is what is seen when someone clicks into the input-
+   * field and adds new entities.
+   * In the note-details-view, this is &quot;Add children...&quot;
+   * The placeholder is only displayed if &#x60;loading &#x3D;&#x3D;&#x3D; false&#x60;
+   */
+  @Input() placeholder: string;
+  /**
+   * Whether or not single chips (entity-views) are selectable.
+   * This currently has no specific meaning and defaults to &lt;code&gt;false&lt;/code&gt;
+   */
+  @Input() selectable &#x3D; false;
+  /**
+   * Whether or not single chips (entity-views) are removable.
+   * If this is the case, they can be deleted.
+   */
+  @Input() removable &#x3D; true;
+
+  /**
+   * Whether or not to show entities in the list.
+   * Entities can still be selected using the autocomplete,
+   * and {@link selection} as well as {@link selectionChange} will
+   * still work as expected
+   */
+  @Input() showEntities &#x3D; true;
+
+  /**
+   * Setting the disabled state of the input element
+   * @param disabled whether the input element should be disabled
+   */
+  @Input() set disabled(disabled: boolean) {
+    if (disabled) {
+      this.formControl.disable();
+    } else {
+      this.formControl.enable();
+    }
+  }
+
+  /**
+   * true when this is loading and false when it&#x27;s ready.
+   * This subject&#x27;s state reflects the actual loading resp. the &#x27;readiness&#x27;-
+   * state of this component. Will trigger once loading is done
+   */
+  loading &#x3D; new BehaviorSubject(true);
+
+  inputPlaceholder &#x3D; this.loadingPlaceholder;
+
+  allEntities: E[] &#x3D; [];
+  filteredEntities: E[] &#x3D; [];
+  formControl &#x3D; new FormControl(&quot;&quot;);
+
+  @ViewChild(&quot;inputField&quot;) inputField: ElementRef&lt;HTMLInputElement&gt;;
+  @ViewChild(MatAutocompleteTrigger) autocomplete: MatAutocompleteTrigger;
+
+  constructor(private entityMapperService: EntityMapperService) {
+    this.formControl.valueChanges
+      .pipe(
+        untilDestroyed(this),
+        filter((value) &#x3D;&gt; value &#x3D;&#x3D;&#x3D; null || typeof value &#x3D;&#x3D;&#x3D; &quot;string&quot;), // sometimes produces entities
+        map((searchText?: string) &#x3D;&gt; this.filter(searchText))
+      )
+      .subscribe((value) &#x3D;&gt; {
+        this.filteredEntities &#x3D; value;
+      });
+    this.loading.pipe(untilDestroyed(this)).subscribe((isLoading) &#x3D;&gt; {
+      this.inputPlaceholder &#x3D; isLoading
+        ? this.loadingPlaceholder
+        : this.placeholder;
+    });
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes.hasOwnProperty(&quot;additionalFilter&quot;)) {
+      // update whenever additional filters are being set
+      this.formControl.setValue(this.formControl.value);
+    }
+  }
+
+  /**
+   * The accessor used for filtering and when selecting a new
+   * entity.
+   * &lt;br&gt; Per default, this filters for the name. If the entity
+   * has no name, this filters for the entity&#x27;s id.
+   */
+  @Input() accessor: (e: Entity) &#x3D;&gt; string &#x3D; (e) &#x3D;&gt; e.toString();
+
+  @Input() additionalFilter: (e: E) &#x3D;&gt; boolean &#x3D; (_) &#x3D;&gt; true;
+
+  private async loadAvailableEntities(types: string[]) {
+    this.loading.next(true);
+    const entities: E[] &#x3D; [];
+
+    for (const type of types) {
+      entities.push(...(await this.entityMapperService.loadType&lt;E&gt;(type)));
+    }
+
+    this.allEntities &#x3D; entities;
+    this.loading.next(false);
+    this.formControl.setValue(null);
+  }
+
+  /**
+   * selects a given entity and emits values
+   * @param entity the entity to select
+   */
+  selectEntity(entity: E) {
+    this.selectedEntities.push(entity);
+    this.emitChange();
+    this.inputField.nativeElement.value &#x3D; &quot;&quot;;
+    this.formControl.setValue(null);
+    setTimeout(() &#x3D;&gt; this.autocomplete.openPanel());
+  }
+
+  /**
+   * called when a key code from {@link separatorKeysCodes}
+   * is recorded and the user has entered a new entity-name (resp.
+   * whatever the accessor defines)
+   * @param event the event to call this with
+   */
+  select(event: Pick&lt;MatChipInputEvent, &quot;value&quot;&gt;) {
+    const value &#x3D; event.value;
+
+    if (value) {
+      const entity &#x3D; this.allEntities.find(
+        (e) &#x3D;&gt; this.accessor(e) &#x3D;&#x3D;&#x3D; value.trim()
+      );
+      if (entity) {
+        this.selectEntity(entity);
+      }
+    }
+  }
+
+  /**
+   * filters a subset of all entities with a given search-text.
+   * Entities that do not match the {@link additionalFilter}-predicate
+   * or are already included won&#x27;t be in this subset.
+   * If the search-text is &lt;code&gt;null&lt;/code&gt; or &lt;code&gt;undefined&lt;/code&gt;,
+   * this will return all entities (with the aforementioned additional filters).
+   * @param value The value to look for in all entities
+   */
+  private filter(value?: string): E[] {
+    let filteredEntities: E[] &#x3D; this.allEntities.filter(
+      (e) &#x3D;&gt; this.additionalFilter(e) &amp;&amp; !this.isSelected(e)
+    );
+    if (value) {
+      const filterValue &#x3D; value.toLowerCase();
+      filteredEntities &#x3D; filteredEntities.filter((entity) &#x3D;&gt;
+        this.accessor(entity).toLowerCase().includes(filterValue)
+      );
+    }
+    return filteredEntities;
+  }
+
+  /**
+   * removes a given entity from the records (if it exists) and emits changes
+   * @param entity The entity to remove
+   */
+  unselectEntity(entity: E) {
+    const index &#x3D; this.selectedEntities.findIndex(
+      (e) &#x3D;&gt; e.getId(true) &#x3D;&#x3D;&#x3D; entity.getId(true)
+    );
+    if (index !&#x3D;&#x3D; -1) {
+      this.selectedEntities.splice(index, 1);
+      this.emitChange();
+      // Update the form control to re-run the filter function
+      this.formControl.updateValueAndValidity();
+    }
+  }
+
+  private emitChange() {
+    this.selectionChange.emit(
+      this.selectedEntities.map((e) &#x3D;&gt; e.getId(this.withPrefix))
+    );
+  }
+
+  private isSelected(entity: E): boolean {
+    return this.selectedEntities.some(
+      (e) &#x3D;&gt; e.getId(true) &#x3D;&#x3D;&#x3D; entity.getId(true)
+    );
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;mat-form-field floatLabel&#x3D;&quot;always&quot;&gt;
+  &lt;mat-label *ngIf&#x3D;&quot;label&quot;&gt;{{ label }}&lt;/mat-label&gt;
+
+  &lt;input
+    #inputField
+    matInput
+    [hidden]&#x3D;&quot;!formControl.enabled&quot;
+    [placeholder]&#x3D;&quot;inputPlaceholder&quot;
+    [formControl]&#x3D;&quot;formControl&quot;
+    [matAutocomplete]&#x3D;&quot;autoSuggestions&quot;
+    [matChipInputFor]&#x3D;&quot;chipList&quot;
+    [matChipInputSeparatorKeyCodes]&#x3D;&quot;separatorKeysCodes&quot;
+    (matChipInputTokenEnd)&#x3D;&quot;select($event)&quot;
+  /&gt;
+
+  &lt;mat-chip-grid #chipList&gt;
+    &lt;ng-container *ngIf&#x3D;&quot;showEntities&quot;&gt;
+      &lt;mat-chip-row
+        [editable]&#x3D;&quot;selectable &amp;&amp; formControl.enabled&quot;
+        [removable]&#x3D;&quot;removable &amp;&amp; formControl.enabled&quot;
+        *ngFor&#x3D;&quot;let entity of selectedEntities&quot;
+        (removed)&#x3D;&quot;unselectEntity(entity)&quot;
+        class&#x3D;&quot;chip&quot;
+      &gt;
+        &lt;app-display-entity
+          class&#x3D;&quot;display-entity&quot;
+          [entityToDisplay]&#x3D;&quot;entity&quot;
+          [linkDisabled]&#x3D;&quot;formControl.enabled&quot;
+        &gt;&lt;/app-display-entity&gt;
+        &lt;button matChipRemove *ngIf&#x3D;&quot;removable &amp;&amp; formControl.enabled&quot;&gt;
+          &lt;fa-icon
+            i18n-matTooltip&#x3D;&quot;tooltip for remove icon-button&quot;
+            matTooltip&#x3D;&quot;remove&quot;
+            icon&#x3D;&quot;xmark&quot;
+          &gt;&lt;/fa-icon&gt;
+        &lt;/button&gt;
+
+      &lt;/mat-chip-row&gt;
+    &lt;/ng-container&gt;
+  &lt;/mat-chip-grid&gt;
+
+  &lt;mat-autocomplete
+    #autoSuggestions&#x3D;&quot;matAutocomplete&quot;
+    (optionSelected)&#x3D;&quot;selectEntity($event.option.value)&quot;
+    autoActiveFirstOption
+  &gt;
+    &lt;ng-content select&#x3D;&quot;mat-option&quot;&gt;&lt;/ng-content&gt;
+    &lt;mat-option *ngFor&#x3D;&quot;let res of filteredEntities&quot; [value]&#x3D;&quot;res&quot;&gt;
+      &lt;app-display-entity
+        [entityToDisplay]&#x3D;&quot;res&quot;
+        [linkDisabled]&#x3D;&quot;true&quot;
+      &gt;&lt;/app-display-entity&gt;
+    &lt;/mat-option&gt;
+  &lt;/mat-autocomplete&gt;
+&lt;/mat-form-field&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./entity-select.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.chip {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><mat-form-field floatLabel="always">  <mat-label *ngIf="label">{{ label }}</mat-label>  <input    #inputField    matInput    [hidden]="!formControl.enabled"    [placeholder]="inputPlaceholder"    [formControl]="formControl"    [matAutocomplete]="autoSuggestions"    [matChipInputFor]="chipList"    [matChipInputSeparatorKeyCodes]="separatorKeysCodes"    (matChipInputTokenEnd)="select($event)"  />  <mat-chip-grid #chipList>    <ng-container *ngIf="showEntities">      <mat-chip-row        [editable]="selectable && formControl.enabled"        [removable]="removable && formControl.enabled"        *ngFor="let entity of selectedEntities"        (removed)="unselectEntity(entity)"        class="chip"      >        <app-display-entity          class="display-entity"          [entityToDisplay]="entity"          [linkDisabled]="formControl.enabled"        ></app-display-entity>        <button matChipRemove *ngIf="removable && formControl.enabled">          <fa-icon            i18n-matTooltip="tooltip for remove icon-button"            matTooltip="remove"            icon="xmark"          ></fa-icon>        </button>      </mat-chip-row>    </ng-container>  </mat-chip-grid>  <mat-autocomplete    #autoSuggestions="matAutocomplete"    (optionSelected)="selectEntity($event.option.value)"    autoActiveFirstOption  >    <ng-content select="mat-option"></ng-content>    <mat-option *ngFor="let res of filteredEntities" [value]="res">      <app-display-entity        [entityToDisplay]="res"        [linkDisabled]="true"      ></app-display-entity>    </mat-option>  </mat-autocomplete></mat-form-field></div>'
+    var COMPONENTS = [{'name': 'AccountPageComponent', 'selector': 'app-account-page'},{'name': 'ActivitiesOverviewComponent', 'selector': 'app-activities-overview'},{'name': 'ActivityAttendanceSectionComponent', 'selector': 'app-activity-attendance-section'},{'name': 'ActivityCardComponent', 'selector': 'app-activity-card'},{'name': 'AddDayAttendanceComponent', 'selector': 'app-add-day-attendance'},{'name': 'AdminComponent', 'selector': 'app-admin'},{'name': 'AlertStoriesHelperComponent', 'selector': 'app-alert-demo'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApplicationLoadingComponent', 'selector': ''},{'name': 'AppVersionComponent', 'selector': 'app-version'},{'name': 'AserComponent', 'selector': 'app-aser'},{'name': 'AttendanceBlockComponent', 'selector': 'app-attendance-block'},{'name': 'AttendanceCalendarComponent', 'selector': 'app-attendance-calendar'},{'name': 'AttendanceDayBlockComponent', 'selector': 'app-attendance-day-block]'},{'name': 'AttendanceDetailsComponent', 'selector': 'app-attendance-details'},{'name': 'AttendanceManagerComponent', 'selector': 'app-attendance-manager'},{'name': 'AttendanceStatusSelectComponent', 'selector': 'app-attendance-status-select'},{'name': 'AttendanceSummaryComponent', 'selector': 'app-attendance-summary'},{'name': 'AttendanceWeekDashboardComponent', 'selector': 'app-attendance-week-dashboard'},{'name': 'BackgroundProcessingIndicatorComponent', 'selector': 'app-background-processing-indicator'},{'name': 'BasicAutocompleteComponent', 'selector': 'app-basic-autocomplete'},{'name': 'BirthdayDashboardComponent', 'selector': 'app-birthday-dashboard'},{'name': 'BmiBlockComponent', 'selector': 'app-bmi-block'},{'name': 'BooleanInputComponent', 'selector': 'app-boolean-input'},{'name': 'ChangelogComponent', 'selector': ''},{'name': 'ChildBlockComponent', 'selector': 'app-child-block'},{'name': 'ChildBlockTooltipComponent', 'selector': 'app-child-block-tooltip'},{'name': 'ChildrenBmiDashboardComponent', 'selector': 'app-children-bmi-dashboard'},{'name': 'ChildrenListComponent', 'selector': 'app-children-list'},{'name': 'ChildSchoolOverviewComponent', 'selector': 'app-child-school-overview'},{'name': 'ComingSoonComponent', 'selector': 'app-coming-soon'},{'name': 'CompareRevComponent', 'selector': 'app-compare-rev'},{'name': 'ConfigImportComponent', 'selector': 'app-config-import'},{'name': 'ConfigureEnumPopupComponent', 'selector': 'app-configure-enum-popup'},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'ConflictResolutionListComponent', 'selector': 'app-conflict-resolution-list'},{'name': 'CustomIntervalComponent', 'selector': 'app-custom-interval'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DashboardListWidgetComponent', 'selector': 'app-dashboard-list-widget'},{'name': 'DashboardShortcutWidgetComponent', 'selector': 'app-dashboard-shortcut-widget'},{'name': 'DashboardWidgetComponent', 'selector': 'app-dashboard-widget'},{'name': 'DataImportComponent', 'selector': 'app-data-import'},{'name': 'DateRangeFilterComponent', 'selector': 'app-date-range-filter'},{'name': 'DateRangeFilterPanelComponent', 'selector': 'app-date-range-filter-panel'},{'name': 'DemoDataGeneratingProgressDialogComponent', 'selector': ''},{'name': 'DialogButtonsComponent', 'selector': 'app-dialog-buttons'},{'name': 'DialogCloseComponent', 'selector': 'app-dialog-close'},{'name': 'DisabledWrapperComponent', 'selector': 'app-disabled-wrapper'},{'name': 'DisplayAgeComponent', 'selector': 'app-display-age'},{'name': 'DisplayCheckmarkComponent', 'selector': 'app-display-tick'},{'name': 'DisplayConfigurableEnumComponent', 'selector': 'app-display-configurable-enum'},{'name': 'DisplayDateComponent', 'selector': 'app-display-date'},{'name': 'DisplayEntityArrayComponent', 'selector': 'app-display-entity-array'},{'name': 'DisplayEntityComponent', 'selector': 'app-display-entity'},{'name': 'DisplayMonthComponent', 'selector': 'app-display-month'},{'name': 'DisplayPercentageComponent', 'selector': 'app-display-percentage'},{'name': 'DisplayRecurringIntervalComponent', 'selector': 'app-display-recurring-interval'},{'name': 'DisplayTextComponent', 'selector': 'app-display-text'},{'name': 'DisplayTodoCompletionComponent', 'selector': 'app-display-todo-completion'},{'name': 'DisplayUnitComponent', 'selector': 'app-display-unit'},{'name': 'EditAgeComponent', 'selector': 'app-edit-age'},{'name': 'EditAttendanceComponent', 'selector': 'app-edit-attendance'},{'name': 'EditBooleanComponent', 'selector': 'app-edit-boolean'},{'name': 'EditConfigurableEnumComponent', 'selector': 'app-edit-configurable-enum'},{'name': 'EditDateComponent', 'selector': 'app-edit-date'},{'name': 'EditEntityArrayComponent', 'selector': 'app-edit-entity-array'},{'name': 'EditFileComponent', 'selector': 'app-edit-file'},{'name': 'EditLocationComponent', 'selector': 'app-edit-location'},{'name': 'EditLongTextComponent', 'selector': 'app-edit-long-text'},{'name': 'EditMonthComponent', 'selector': 'app-edit-month'},{'name': 'EditNumberComponent', 'selector': 'app-edit-number'},{'name': 'EditPhotoComponent', 'selector': 'app-edit-photo'},{'name': 'EditProgressDashboardComponent', 'selector': 'app-edit-progress-dashboard'},{'name': 'EditRecurringIntervalComponent', 'selector': 'app-edit-recurring-interval'},{'name': 'EditSingleEntityComponent', 'selector': 'app-edit-single-entity'},{'name': 'EditTextComponent', 'selector': 'app-edit-text'},{'name': 'EditTextWithAutocompleteComponent', 'selector': 'app-edit-text-with-autocomplete'},{'name': 'EducationalMaterialComponent', 'selector': 'app-educational-material'},{'name': 'EntityCountDashboardComponent', 'selector': 'app-entity-count-dashboard'},{'name': 'EntityDetailsComponent', 'selector': 'app-entity-details'},{'name': 'EntityFormComponent', 'selector': 'app-entity-form'},{'name': 'EntityListComponent', 'selector': 'app-entity-list'},{'name': 'EntityPropertyViewComponent', 'selector': 'app-entity-property-view'},{'name': 'EntitySelectComponent', 'selector': 'app-entity-select'},{'name': 'EntitySubrecordComponent', 'selector': 'app-entity-subrecord'},{'name': 'EnumDropdownComponent', 'selector': 'app-enum-dropdown'},{'name': 'ErrorHintComponent', 'selector': 'app-error-hint'},{'name': 'FaDynamicIconComponent', 'selector': 'app-fa-dynamic-icon'},{'name': 'FilterComponent', 'selector': 'app-filter'},{'name': 'FilterOverlayComponent', 'selector': 'app-filter-overlay'},{'name': 'FormComponent', 'selector': 'app-form'},{'name': 'GroupedChildAttendanceComponent', 'selector': 'app-grouped-child-attendance'},{'name': 'HealthCheckupComponent', 'selector': 'app-health-checkup'},{'name': 'HistoricalDataComponent', 'selector': 'app-historical-data'},{'name': 'ImagePopupComponent', 'selector': 'app-image-popup'},{'name': 'ImportantNotesDashboardComponent', 'selector': 'app-important-notes-dashboard'},{'name': 'InputFileComponent', 'selector': 'app-input-file'},{'name': 'LanguageSelectComponent', 'selector': 'app-language-select'},{'name': 'ListFilterComponent', 'selector': 'app-list-filter'},{'name': 'ListPaginatorComponent', 'selector': 'app-list-paginator'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'MapPopupComponent', 'selector': 'app-map-popup'},{'name': 'MapPropertiesPopupComponent', 'selector': 'app-map-properties-popup'},{'name': 'MarkdownPageComponent', 'selector': 'app-markdown-page'},{'name': 'MatchingEntitiesComponent', 'selector': 'app-matching-entities'},{'name': 'NavigationComponent', 'selector': 'app-navigation'},{'name': 'NoteAttendanceCountBlockComponent', 'selector': 'app-note-attendance-count-block'},{'name': 'NoteDetailsComponent', 'selector': 'app-note-details'},{'name': 'NotesDashboardComponent', 'selector': 'app-no-recent-notes-dashboard'},{'name': 'NotesManagerComponent', 'selector': 'app-notes-manager'},{'name': 'NotesRelatedToEntityComponent', 'selector': 'app-notes-related-to-entity'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'ObjectTableComponent', 'selector': 'app-object-table'},{'name': 'PasswordFormComponent', 'selector': 'app-password-form'},{'name': 'PasswordResetComponent', 'selector': 'app-password-reset'},{'name': 'PillComponent', 'selector': 'app-pill'},{'name': 'PrimaryActionComponent', 'selector': 'app-primary-action'},{'name': 'ProgressComponent', 'selector': 'app-progress'},{'name': 'ProgressDashboardComponent', 'selector': 'app-progress-dashboard'},{'name': 'PublicFormComponent', 'selector': 'app-public-form'},{'name': 'PwaInstallComponent', 'selector': 'app-pwa-install'},{'name': 'ReadonlyFunctionComponent', 'selector': 'app-readonly-function'},{'name': 'RecentAttendanceBlocksComponent', 'selector': 'app-recent-attendance-blocks'},{'name': 'RelatedEntitiesComponent', 'selector': 'app-related-entities'},{'name': 'ReportingComponent', 'selector': 'app-reporting'},{'name': 'ReportRowComponent', 'selector': 'app-report-row'},{'name': 'RollCallComponent', 'selector': 'app-roll-call'},{'name': 'RollCallSetupComponent', 'selector': 'app-roll-call-setup'},{'name': 'RollCallTabComponent', 'selector': 'app-roll-call-tab'},{'name': 'RowDetailsComponent', 'selector': 'app-row-details'},{'name': 'SchoolBlockComponent', 'selector': 'app-school-block'},{'name': 'SearchComponent', 'selector': 'app-search'},{'name': 'SelectReportComponent', 'selector': 'app-select-report'},{'name': 'ShowFileComponent', 'selector': 'app-show-file'},{'name': 'SupportComponent', 'selector': 'app-support'},{'name': 'SyncStatusComponent', 'selector': 'app-sync-status'},{'name': 'TemplateTooltipComponent', 'selector': 'TemplateTooltipComponent.SELECTOR'},{'name': 'TodoCompletionComponent', 'selector': 'app-todo-completion'},{'name': 'TodoDetailsComponent', 'selector': 'app-todo-details'},{'name': 'TodoListComponent', 'selector': 'app-todo-list'},{'name': 'TodosDashboardComponent', 'selector': 'app-todos-dashboard'},{'name': 'TodosRelatedToEntityComponent', 'selector': 'app-todos-related-to-entity'},{'name': 'UiComponent', 'selector': 'app-ui'},{'name': 'UserAccountComponent', 'selector': 'app-user-account'},{'name': 'UserSecurityComponent', 'selector': 'app-user-security'},{'name': 'ViewDistanceComponent', 'selector': 'app-view-distance'},{'name': 'ViewFileComponent', 'selector': 'app-view-file'},{'name': 'ViewLocationComponent', 'selector': 'app-view-location'},{'name': 'ViewTitleComponent', 'selector': 'app-view-title'},{'name': 'WidgetContentComponent', 'selector': 'app-widget-content'}];
+    var DIRECTIVES = [{'name': 'BorderHighlightDirective', 'selector': '[appBorderHighlight]'},{'name': 'ConfigurableEnumDirective', 'selector': '[appConfigurableEnum]'},{'name': 'CustomFormControlDirective', 'selector': ''},{'name': 'DisableEntityOperationDirective', 'selector': '[appDisabledEntityOperation]'},{'name': 'DynamicComponentDirective', 'selector': '[appDynamicComponent]'},{'name': 'EditComponent', 'selector': ''},{'name': 'ExportDataDirective', 'selector': '[appExportData]'},{'name': 'TabStateMemoDirective', 'selector': '[appTabStateMemo]'},{'name': 'TemplateTooltipDirective', 'selector': '[appTemplateTooltip]'},{'name': 'ViewDirective', 'selector': ''}];
+    var ACTUAL_COMPONENT = {'name': 'EntitySelectComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'EntitySelectComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,2269 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ndb-core documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">ndb-core documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  EntitySubrecordComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts</code>
+</p>
+
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Generically configurable component to display and edit a list of entities in a compact way
+that can especially be used within another entity&#39;s details view to display related entities.</p>
+<p>For example, all Notes related to a certain Child are displayed within the Child&#39;s detail view
+with the help of this component.</p>
+<p>Pagination is available, but the values are not stored. That means that every time calling
+the component pagination starts with the initial values set in this component.</p>
+<p>A detailed Guide on how to use this component is available:</p>
+<ul>
+<li><a href="/additional-documentation/how-to-guides/display-related-entities.html">How to display related entities</a></li>
+</ul>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnChanges</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-entity-subrecord</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">Standalone</td>
+                <td class="col-md-9"><code>true</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">imports</td>
+                <td class="col-md-9">
+                            <code>NgIf</code>
+                            <code>MatProgressBarModule</code>
+                            <code>MatTableModule</code>
+                            <code>MatSortModule</code>
+                            <code>NgForOf</code>
+                            <code>MatTooltipModule</code>
+                                <code><a href="../directives/DynamicComponentDirective.html" target="_self" >DynamicComponentDirective</a></code>
+                            <code>MatButtonModule</code>
+                            <code>FontAwesomeModule</code>
+                                <code><a href="../directives/DisableEntityOperationDirective.html" target="_self" >DisableEntityOperationDirective</a></code>
+                            <code>Angulartics2Module</code>
+                                <code><a href="../components/ListPaginatorComponent.html" target="_self" >ListPaginatorComponent</a></code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./entity-subrecord.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./entity-subrecord.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#_columns" >_columns</a>
+                            </li>
+                            <li>
+                                <a href="#filteredColumns" >filteredColumns</a>
+                            </li>
+                            <li>
+                                <a href="#idForSavingPagination" >idForSavingPagination</a>
+                            </li>
+                            <li>
+                                <a href="#recordsDataSource" >recordsDataSource</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                <a href="#sort" >sort</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#create" >create</a>
+                            </li>
+                            <li>
+                                <a href="#delete" >delete</a>
+                            </li>
+                            <li>
+                                <a href="#edit" >edit</a>
+                            </li>
+                            <li>
+                                <a href="#getEntityConstructor" >getEntityConstructor</a>
+                            </li>
+                            <li>
+                                <a href="#onRowClick" >onRowClick</a>
+                            </li>
+                            <li>
+                                <a href="#resetChanges" >resetChanges</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#save" >save</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#clickMode" >clickMode</a>
+                            </li>
+                            <li>
+                                <a href="#columns" >columns</a>
+                            </li>
+                            <li>
+                                <a href="#columnsToDisplay" >columnsToDisplay</a>
+                            </li>
+                            <li>
+                                <a href="#defaultSort" >defaultSort</a>
+                            </li>
+                            <li>
+                                <a href="#editable" >editable</a>
+                            </li>
+                            <li>
+                                <a href="#filter" >filter</a>
+                            </li>
+                            <li>
+                                <a href="#getBackgroundColor" >getBackgroundColor</a>
+                            </li>
+                            <li>
+                                <a href="#isLoading" >isLoading</a>
+                            </li>
+                            <li>
+                                <a href="#newRecordFactory" >newRecordFactory</a>
+                            </li>
+                            <li>
+                                <a href="#records" >records</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#rowClick" >rowClick</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#columns" >columns</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(alertService: <a href="../injectables/AlertService.html" target="_self">AlertService</a>, screenWidthObserver: <a href="../injectables/ScreenWidthObserver.html" target="_self">ScreenWidthObserver</a>, entityFormService: <a href="../injectables/EntityFormService.html" target="_self">EntityFormService</a>, formDialog: <a href="../injectables/FormDialogService.html" target="_self">FormDialogService</a>, router: Router, analyticsService: <a href="../injectables/AnalyticsService.html" target="_self">AnalyticsService</a>, loggingService: <a href="../injectables/LoggingService.html" target="_self">LoggingService</a>, entityRemoveService: <a href="../injectables/EntityRemoveService.html" target="_self">EntityRemoveService</a>, entityMapper: <a href="../injectables/EntityMapperService.html" target="_self">EntityMapperService</a>, filterService: <a href="../injectables/FilterService.html" target="_self">FilterService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="159" class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:159</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>alertService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AlertService.html" target="_self" >AlertService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>screenWidthObserver</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ScreenWidthObserver.html" target="_self" >ScreenWidthObserver</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>entityFormService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/EntityFormService.html" target="_self" >EntityFormService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formDialog</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FormDialogService.html" target="_self" >FormDialogService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code>Router</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>analyticsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AnalyticsService.html" target="_self" >AnalyticsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>loggingService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LoggingService.html" target="_self" >LoggingService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>entityRemoveService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/EntityRemoveService.html" target="_self" >EntityRemoveService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>entityMapper</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/EntityMapperService.html" target="_self" >EntityMapperService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>filterService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FilterService.html" target="_self" >FilterService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section data-compodoc="block-inputs">
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="clickMode"></a>
+                        <b>clickMode</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>&quot;popup&quot; | &quot;navigate&quot; | &quot;none&quot;</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;popup&quot;</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="99" class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:99</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="columns"></a>
+                        <b>columns</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Config.html" target="_self" >ColumnConfig[]</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="102" class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:102</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>configuration what kind of columns to be generated for the table</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="columnsToDisplay"></a>
+                        <b>columnsToDisplay</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="130" class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:130</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>columns displayed in the template&#39;s table</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="defaultSort"></a>
+                        <b>defaultSort</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Sort</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="133" class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:133</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>how to sort data by default during initialization</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="editable"></a>
+                        <b>editable</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="127" class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:127</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Whether the rows of the table are inline editable and new entries can be created through the &quot;+&quot; button.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="filter"></a>
+                        <b>filter</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Filter.html" target="_self" >DataFilter&lt;T&gt;</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="158" class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:158</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Adds a filter for the displayed data.
+Only data, that passes the filter will be shown in the table.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getBackgroundColor"></a>
+                        <b>getBackgroundColor</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>(rec: T) &#x3D;&gt; rec.getColor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="183" class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:183</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>function returns the background color for each row</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isLoading"></a>
+                        <b>isLoading</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:97</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="newRecordFactory"></a>
+                        <b>newRecordFactory</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="120" class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:120</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>factory method to create a new instance of the displayed Entity type
+used when the user adds a new entity to the list.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="records"></a>
+                        <b>records</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>T[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="114" class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:114</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>data to be displayed, can also be used as two-way-binding</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+    <section data-compodoc="block-outputs">
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rowClick"></a>
+                        <b>rowClick</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>EventEmitter</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="151" class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:151</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Event triggered when the user clicks on a row (i.e. entity).
+This does not change the default behavior like opening popup form,
+you may want to additionally set <code>clickMode</code> to change that.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="create"></a>
+                    <span class="name">
+                        <span ><b>create</b></span>
+                        <a href="#create"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>create()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="431"
+                            class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:431</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Create a new entity.
+The entity is only written to the database when the user saves this record which is newly added in edit mode.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="delete"></a>
+                    <span class="name">
+                        <span ><b>delete</b></span>
+                        <a href="#delete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>delete(row: <a href="../interfaces/TableRow.html" target="_self">TableRow&lt;T&gt;</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="395"
+                            class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:395</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Delete the given entity from the database (after explicit user confirmation).</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>row</td>
+                                    <td>
+                                                <code><a href="../interfaces/TableRow.html" target="_self" >TableRow&lt;T&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The entity to be deleted.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="edit"></a>
+                    <span class="name">
+                        <span ><b>edit</b></span>
+                        <a href="#edit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>edit(row: <a href="../interfaces/TableRow.html" target="_self">TableRow&lt;T&gt;</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="350"
+                            class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:350</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>row</td>
+                                    <td>
+                                                <code><a href="../interfaces/TableRow.html" target="_self" >TableRow&lt;T&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getEntityConstructor"></a>
+                    <span class="name">
+                        <span ><b>getEntityConstructor</b></span>
+                        <a href="#getEntityConstructor"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getEntityConstructor()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="195"
+                            class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:195</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Entity.html" target="_self" >EntityConstructor&lt;T&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onRowClick"></a>
+                    <span class="name">
+                        <span ><b>onRowClick</b></span>
+                        <a href="#onRowClick"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onRowClick(row: <a href="../interfaces/TableRow.html" target="_self">TableRow&lt;T&gt;</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="443"
+                            class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:443</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Show one record&#39;s details in a modal dialog (if configured).</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>row</td>
+                                    <td>
+                                                <code><a href="../interfaces/TableRow.html" target="_self" >TableRow&lt;T&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The entity whose details should be displayed.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetChanges"></a>
+                    <span class="name">
+                        <span ><b>resetChanges</b></span>
+                        <a href="#resetChanges"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>resetChanges(row: <a href="../interfaces/TableRow.html" target="_self">TableRow&lt;T&gt;</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="387"
+                            class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:387</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Discard any changes to the given entity and reset it to the state before the user started editing.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>row</td>
+                                    <td>
+                                                <code><a href="../interfaces/TableRow.html" target="_self" >TableRow&lt;T&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The entity to be reset.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="save"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>save</b></span>
+                        <a href="#save"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>save(row: <a href="../interfaces/TableRow.html" target="_self">TableRow&lt;T&gt;</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="369"
+                            class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:369</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Save an edited record to the database (if validation succeeds).</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>row</td>
+                                    <td>
+                                                <code><a href="../interfaces/TableRow.html" target="_self" >TableRow&lt;T&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The entity to be saved.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_columns"></a>
+                    <span class="name">
+                        <span ><b>_columns</b></span>
+                        <a href="#_columns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/FormFieldConfig.html" target="_self" >FormFieldConfig[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="110" class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:110</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filteredColumns"></a>
+                    <span class="name">
+                        <span ><b>filteredColumns</b></span>
+                        <a href="#filteredColumns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/FormFieldConfig.html" target="_self" >FormFieldConfig[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="111" class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:111</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="idForSavingPagination"></a>
+                    <span class="name">
+                        <span ><b>idForSavingPagination</b></span>
+                        <a href="#idForSavingPagination"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;startWert&quot;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="142" class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:142</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="recordsDataSource"></a>
+                    <span class="name">
+                        <span ><b>recordsDataSource</b></span>
+                        <a href="#recordsDataSource"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new MatTableDataSource&lt;TableRow&lt;T&gt;&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="136" class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:136</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>data displayed in the template&#39;s table</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sort"></a>
+                    <span class="name">
+                            <span class="modifier"></span>
+                        <span ><b>sort</b></span>
+                        <a href="#sort"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MatSort</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(MatSort, {static: true})<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="144" class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:144</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-accessors">
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="columns"></a>
+                        <span class="name"><b>columns</b><a href="#columns"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>columns(columns: <a href="../classes/Config.html" target="_self">ColumnConfig[]</a>)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="102" class="link-to-prism">src/app/core/entity-components/entity-subrecord/entity-subrecord/entity-subrecord.component.ts:102</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>configuration what kind of columns to be generated for the table</p>
+</div>
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>columns</td>
+                                                    
+                                                            <td>
+                                                                            <code><a href="../classes/Config.html" target="_self" >ColumnConfig[]</a></code>
+                                                            </td>
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  Component,
+  EventEmitter,
+  Input,
+  OnChanges,
+  Output,
+  SimpleChanges,
+  ViewChild,
+} from &quot;@angular/core&quot;;
+import {
+  MatSort,
+  MatSortModule,
+  Sort,
+  SortDirection,
+} from &quot;@angular/material/sort&quot;;
+import { MatTableDataSource, MatTableModule } from &quot;@angular/material/table&quot;;
+import { UntilDestroy, untilDestroyed } from &quot;@ngneat/until-destroy&quot;;
+import { Entity, EntityConstructor } from &quot;../../../entity/model/entity&quot;;
+import { AlertService } from &quot;../../../alerts/alert.service&quot;;
+import { FormFieldConfig } from &quot;../../entity-form/entity-form/FormConfig&quot;;
+import {
+  EntityForm,
+  EntityFormService,
+} from &quot;../../entity-form/entity-form.service&quot;;
+import { LoggingService } from &quot;../../../logging/logging.service&quot;;
+import { AnalyticsService } from &quot;../../../analytics/analytics.service&quot;;
+import {
+  EntityRemoveService,
+  RemoveResult,
+} from &quot;../../../entity/entity-remove.service&quot;;
+import { EntityMapperService } from &quot;../../../entity/entity-mapper.service&quot;;
+import { tableSort } from &quot;./table-sort&quot;;
+import {
+  ScreenSize,
+  ScreenWidthObserver,
+} from &quot;../../../../utils/media/screen-size-observer.service&quot;;
+import { Subscription } from &quot;rxjs&quot;;
+import { InvalidFormFieldError } from &quot;../../entity-form/invalid-form-field.error&quot;;
+import {
+  ColumnConfig,
+  DataFilter,
+  toFormFieldConfig,
+} from &quot;./entity-subrecord-config&quot;;
+import { FilterService } from &quot;../../../filter/filter.service&quot;;
+import { FormDialogService } from &quot;../../../form-dialog/form-dialog.service&quot;;
+import { Router } from &quot;@angular/router&quot;;
+import { NgForOf, NgIf } from &quot;@angular/common&quot;;
+import { MatProgressBarModule } from &quot;@angular/material/progress-bar&quot;;
+import { MatTooltipModule } from &quot;@angular/material/tooltip&quot;;
+import { DynamicComponentDirective } from &quot;../../../view/dynamic-components/dynamic-component.directive&quot;;
+import { MatButtonModule } from &quot;@angular/material/button&quot;;
+import { FontAwesomeModule } from &quot;@fortawesome/angular-fontawesome&quot;;
+import { DisableEntityOperationDirective } from &quot;../../../permissions/permission-directive/disable-entity-operation.directive&quot;;
+import { Angulartics2Module } from &quot;angulartics2&quot;;
+import { ListPaginatorComponent } from &quot;../list-paginator/list-paginator.component&quot;;
+
+export interface TableRow&lt;T extends Entity&gt; {
+  record: T;
+  formGroup?: EntityForm&lt;T&gt;;
+}
+
+/**
+ * Generically configurable component to display and edit a list of entities in a compact way
+ * that can especially be used within another entity&#x27;s details view to display related entities.
+ *
+ * For example, all Notes related to a certain Child are displayed within the Child&#x27;s detail view
+ * with the help of this component.
+ *
+ * Pagination is available, but the values are not stored. That means that every time calling
+ * the component pagination starts with the initial values set in this component.
+ *
+ * A detailed Guide on how to use this component is available:
+ * - [How to display related entities]{@link /additional-documentation/how-to-guides/display-related-entities.html}
+ */
+@UntilDestroy()
+@Component({
+  selector: &quot;app-entity-subrecord&quot;,
+  templateUrl: &quot;./entity-subrecord.component.html&quot;,
+  styleUrls: [&quot;./entity-subrecord.component.scss&quot;],
+  imports: [
+    NgIf,
+    MatProgressBarModule,
+    MatTableModule,
+    MatSortModule,
+    NgForOf,
+    MatTooltipModule,
+    DynamicComponentDirective,
+    MatButtonModule,
+    FontAwesomeModule,
+    DisableEntityOperationDirective,
+    Angulartics2Module,
+    ListPaginatorComponent,
+  ],
+  standalone: true,
+})
+export class EntitySubrecordComponent&lt;T extends Entity&gt; implements OnChanges {
+  @Input() isLoading: boolean;
+
+  @Input() clickMode: &quot;popup&quot; | &quot;navigate&quot; | &quot;none&quot; &#x3D; &quot;popup&quot;;
+
+  /** configuration what kind of columns to be generated for the table */
+  @Input() set columns(columns: ColumnConfig[]) {
+    if (columns) {
+      this._columns &#x3D; columns.map(toFormFieldConfig);
+      this.filteredColumns &#x3D; this._columns.filter((col) &#x3D;&gt; !col.hideFromTable);
+      this.idForSavingPagination &#x3D; this._columns.map((col) &#x3D;&gt; col.id).join(&quot;&quot;);
+    }
+  }
+
+  _columns: FormFieldConfig[] &#x3D; [];
+  filteredColumns: FormFieldConfig[] &#x3D; [];
+
+  /** data to be displayed, can also be used as two-way-binding */
+  @Input() records: T[] &#x3D; [];
+
+  /**
+   * factory method to create a new instance of the displayed Entity type
+   * used when the user adds a new entity to the list.
+   */
+  @Input() newRecordFactory: () &#x3D;&gt; T;
+
+  private entityConstructor: EntityConstructor&lt;T&gt;;
+
+  /**
+   * Whether the rows of the table are inline editable and new entries can be created through the &quot;+&quot; button.
+   */
+  @Input() editable &#x3D; true;
+
+  /** columns displayed in the template&#x27;s table */
+  @Input() columnsToDisplay: string[] &#x3D; [];
+
+  /** how to sort data by default during initialization */
+  @Input() defaultSort: Sort;
+
+  /** data displayed in the template&#x27;s table */
+  recordsDataSource &#x3D; new MatTableDataSource&lt;TableRow&lt;T&gt;&gt;();
+
+  private updateSubscription: Subscription;
+  private mediaSubscription: Subscription &#x3D; Subscription.EMPTY;
+  private screenWidth: ScreenSize | undefined &#x3D; undefined;
+
+  idForSavingPagination &#x3D; &quot;startWert&quot;;
+
+  @ViewChild(MatSort, { static: true }) sort: MatSort;
+
+  /**
+   * Event triggered when the user clicks on a row (i.e. entity).
+   * This does not change the default behavior like opening popup form,
+   * you may want to additionally set &#x60;clickMode&#x60; to change that.
+   */
+  @Output() rowClick &#x3D; new EventEmitter&lt;T&gt;();
+
+  /**
+   * Adds a filter for the displayed data.
+   * Only data, that passes the filter will be shown in the table.
+   * @param filter a valid MongoDB Query
+   */
+  @Input() filter: DataFilter&lt;T&gt;;
+  private predicate: (entity: T) &#x3D;&gt; boolean &#x3D; () &#x3D;&gt; true;
+
+  constructor(
+    private alertService: AlertService,
+    private screenWidthObserver: ScreenWidthObserver,
+    private entityFormService: EntityFormService,
+    private formDialog: FormDialogService,
+    private router: Router,
+    private analyticsService: AnalyticsService,
+    private loggingService: LoggingService,
+    private entityRemoveService: EntityRemoveService,
+    private entityMapper: EntityMapperService,
+    private filterService: FilterService
+  ) {
+    this.mediaSubscription &#x3D; this.screenWidthObserver
+      .shared()
+      .pipe(untilDestroyed(this))
+      .subscribe((change: ScreenSize) &#x3D;&gt; {
+        this.screenWidth &#x3D; change;
+        this.setupTable();
+      });
+  }
+
+  /** function returns the background color for each row*/
+  @Input() getBackgroundColor?: (rec: T) &#x3D;&gt; string &#x3D; (rec: T) &#x3D;&gt; rec.getColor();
+
+  private initDataSource() {
+    this.recordsDataSource.data &#x3D; this.records
+      .filter(this.predicate)
+      .map((record) &#x3D;&gt; ({ record }));
+  }
+
+  private entityConstructorIsAvailable(): boolean {
+    return this.records.length &gt; 0 || !!this.newRecordFactory;
+  }
+
+  getEntityConstructor(): EntityConstructor&lt;T&gt; {
+    if (!this.entityConstructorIsAvailable()) {
+      throw new Error(&quot;No constructor is available&quot;);
+    }
+
+    if (!this.entityConstructor) {
+      const record &#x3D;
+        this.records.length &gt; 0 ? this.records[0] : this.newRecordFactory();
+      this.entityConstructor &#x3D; record.getConstructor();
+    }
+    return this.entityConstructor;
+  }
+
+  /**
+   * Update the component if any of the @Input properties were changed from outside.
+   * @param changes
+   */
+  ngOnChanges(changes: SimpleChanges) {
+    let reinitDataSource &#x3D; false;
+    let resetupTable &#x3D; false;
+    let reinitFormGroups &#x3D; false;
+
+    if (changes.hasOwnProperty(&quot;records&quot;)) {
+      if (!this.records) {
+        this.records &#x3D; [];
+      }
+      reinitDataSource &#x3D; true;
+
+      if (this.records.length &gt; 0) {
+        if (!this.newRecordFactory) {
+          this.newRecordFactory &#x3D; () &#x3D;&gt;
+            new (this.records[0].getConstructor())();
+        }
+        reinitFormGroups &#x3D; true;
+        if (this.columnsToDisplay.length &lt; 2) {
+          resetupTable &#x3D; true;
+        }
+      }
+    }
+    if (changes.hasOwnProperty(&quot;filter&quot;) &amp;&amp; this.filter) {
+      this.predicate &#x3D; this.filterService.getFilterPredicate(this.filter);
+      reinitDataSource &#x3D; true;
+    }
+    if (changes.hasOwnProperty(&quot;columns&quot;)) {
+      reinitFormGroups &#x3D; true;
+      if (this.columnsToDisplay.length &lt; 2) {
+        resetupTable &#x3D; true;
+      }
+    }
+    if (changes.hasOwnProperty(&quot;columnsToDisplay&quot;)) {
+      this.mediaSubscription.unsubscribe();
+    }
+
+    if (reinitDataSource) {
+      this.initDataSource();
+    }
+    if (reinitFormGroups) {
+      this.initFormGroups();
+    }
+    if (resetupTable) {
+      this.setupTable();
+    }
+    if (changes.hasOwnProperty(&quot;records&quot;)) {
+      this.sortDefault();
+    }
+
+    this.listenToEntityUpdates();
+  }
+
+  private initFormGroups() {
+    if (this.entityConstructorIsAvailable()) {
+      try {
+        this.entityFormService.extendFormFieldConfig(
+          this._columns,
+          this.getEntityConstructor(),
+          true
+        );
+      } catch (err) {
+        this.loggingService.warn(&#x60;Error creating form definitions: ${err}&#x60;);
+      }
+    }
+  }
+
+  private sortDefault() {
+    if (
+      this.records.length &#x3D;&#x3D;&#x3D; 0 ||
+      this._columns.length &#x3D;&#x3D;&#x3D; 0 ||
+      this.sort.active
+    ) {
+      // do not overwrite existing sort
+      return;
+    }
+
+    this.recordsDataSource.sort &#x3D; this.sort;
+
+    this.recordsDataSource.sortData &#x3D; (data, sort) &#x3D;&gt;
+      tableSort(data, {
+        active: sort.active as keyof T | &quot;&quot;,
+        direction: sort.direction,
+      });
+
+    this.defaultSort &#x3D; this.defaultSort ?? this.inferDefaultSort();
+
+    this.sort.sort({
+      id: this.defaultSort.active,
+      start: this.defaultSort.direction,
+      disableClear: false,
+    });
+  }
+
+  private inferDefaultSort(): Sort {
+    // initial sorting by first column, ensure that not the &#x27;action&#x27; column is used
+    const sortBy &#x3D;
+      this.columnsToDisplay[0] &#x3D;&#x3D;&#x3D; &quot;actions&quot;
+        ? this.columnsToDisplay[1]
+        : this.columnsToDisplay[0];
+    const sortByColumn &#x3D; this._columns.find((c) &#x3D;&gt; c.id &#x3D;&#x3D;&#x3D; sortBy);
+
+    let sortDirection: SortDirection &#x3D; &quot;asc&quot;;
+    if (
+      sortByColumn?.view &#x3D;&#x3D;&#x3D; &quot;DisplayDate&quot; ||
+      sortByColumn?.view &#x3D;&#x3D;&#x3D; &quot;DisplayMonth&quot;
+    ) {
+      // flip default sort order for dates (latest first)
+      sortDirection &#x3D; &quot;desc&quot;;
+    }
+
+    return { active: sortBy, direction: sortDirection };
+  }
+
+  private listenToEntityUpdates() {
+    if (!this.updateSubscription &amp;&amp; this.entityConstructorIsAvailable()) {
+      this.updateSubscription &#x3D; this.entityMapper
+        .receiveUpdates(this.getEntityConstructor())
+        .pipe(untilDestroyed(this))
+        .subscribe(({ entity, type }) &#x3D;&gt; {
+          if (type &#x3D;&#x3D;&#x3D; &quot;new&quot;) {
+            this.addToTable(entity);
+          } else if (type &#x3D;&#x3D;&#x3D; &quot;remove&quot;) {
+            this.removeFromDataTable(entity);
+          } else if (
+            type &#x3D;&#x3D;&#x3D; &quot;update&quot; &amp;&amp;
+            !this.records.find((rec) &#x3D;&gt; rec.getId() &#x3D;&#x3D;&#x3D; entity.getId())
+          ) {
+            this.addToTable(entity);
+          }
+
+          if (!this.predicate(entity)) {
+            // hide after a short delay to give a signal in the UI why records disappear by showing the changed values first
+            setTimeout(() &#x3D;&gt; this.initDataSource(), 5000);
+          }
+        });
+    }
+  }
+
+  edit(row: TableRow&lt;T&gt;) {
+    if (this.screenWidthObserver.isDesktop()) {
+      if (!row.formGroup) {
+        row.formGroup &#x3D; this.entityFormService.createFormGroup(
+          this._columns,
+          row.record,
+          true
+        );
+      }
+      row.formGroup.enable();
+    } else {
+      this.showEntity(row.record);
+    }
+  }
+
+  /**
+   * Save an edited record to the database (if validation succeeds).
+   * @param row The entity to be saved.
+   */
+  async save(row: TableRow&lt;T&gt;): Promise&lt;void&gt; {
+    try {
+      row.record &#x3D; await this.entityFormService.saveChanges(
+        row.formGroup,
+        row.record
+      );
+      row.formGroup.disable();
+    } catch (err) {
+      if (!(err instanceof InvalidFormFieldError)) {
+        this.alertService.addDanger(err.message);
+      }
+    }
+  }
+
+  /**
+   * Discard any changes to the given entity and reset it to the state before the user started editing.
+   * @param row The entity to be reset.
+   */
+  resetChanges(row: TableRow&lt;T&gt;) {
+    row.formGroup &#x3D; null;
+  }
+
+  /**
+   * Delete the given entity from the database (after explicit user confirmation).
+   * @param row The entity to be deleted.
+   */
+  delete(row: TableRow&lt;T&gt;) {
+    this.entityRemoveService
+      .remove(row.record, {
+        deletedEntityInformation: $localize&#x60;:Record deleted info:Record deleted&#x60;,
+        dialogText: $localize&#x60;:Delete confirmation message:Are you sure you want to delete this record?&#x60;,
+      })
+      .subscribe((result) &#x3D;&gt; {
+        switch (result) {
+          case RemoveResult.REMOVED:
+            this.removeFromDataTable(row.record);
+            break;
+          case RemoveResult.UNDONE:
+            this.records.unshift(row.record);
+            this.initFormGroups();
+        }
+      });
+  }
+
+  private removeFromDataTable(deleted: T) {
+    // use setter so datasource is also updated
+    this.records &#x3D; this.records.filter(
+      (rec) &#x3D;&gt; rec.getId() !&#x3D;&#x3D; deleted.getId()
+    );
+    this.initDataSource();
+  }
+
+  private addToTable(record: T) {
+    // use setter so datasource is also updated
+    this.records &#x3D; [record].concat(this.records);
+    this.initDataSource();
+  }
+
+  /**
+   * Create a new entity.
+   * The entity is only written to the database when the user saves this record which is newly added in edit mode.
+   */
+  create() {
+    const newRecord &#x3D; this.newRecordFactory();
+    this.showEntity(newRecord);
+    this.analyticsService.eventTrack(&quot;subrecord_add_new&quot;, {
+      category: newRecord.getType(),
+    });
+  }
+
+  /**
+   * Show one record&#x27;s details in a modal dialog (if configured).
+   * @param row The entity whose details should be displayed.
+   */
+  onRowClick(row: TableRow&lt;T&gt;) {
+    if (!row.formGroup || row.formGroup.disabled) {
+      this.showEntity(row.record);
+      this.analyticsService.eventTrack(&quot;subrecord_show_popup&quot;, {
+        category: row.record.getType(),
+      });
+    }
+  }
+
+  private showEntity(entity: T) {
+    switch (this.clickMode) {
+      case &quot;popup&quot;:
+        this.formDialog.openFormPopup(entity, this._columns);
+        break;
+      case &quot;navigate&quot;:
+        this.router.navigate([
+          entity.getConstructor().route,
+          entity.getId(false),
+        ]);
+        break;
+    }
+    this.rowClick.emit(entity);
+  }
+
+  /**
+   * resets columnsToDisplay depending on current screensize
+   */
+  private setupTable() {
+    if (this._columns !&#x3D;&#x3D; undefined &amp;&amp; this.screenWidth !&#x3D;&#x3D; undefined) {
+      this.columnsToDisplay &#x3D; this._columns
+        .filter((col) &#x3D;&gt; this.isVisible(col))
+        .map((col) &#x3D;&gt; col.id);
+      this.columnsToDisplay.unshift(&quot;actions&quot;);
+    }
+  }
+
+  /**
+   * isVisible
+   * compares the current screensize to the columns&#x27; property visibleFrom. screensize &lt; visibleFrom? column not displayed
+   * @param col column that is checked
+   * @return returns true if column is visible
+   */
+  private isVisible(col: FormFieldConfig): boolean {
+    if (col.hideFromTable) {
+      return false;
+    }
+    // when &#x60;ScreenSize[col.visibleFrom]&#x60; is undefined, this returns &#x60;true&#x60;
+    const numericValue &#x3D; ScreenSize[col.visibleFrom];
+    if (numericValue &#x3D;&#x3D;&#x3D; undefined) {
+      return true;
+    }
+    return this.screenWidthObserver.currentScreenSize() &gt;&#x3D; numericValue;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div *ngIf&#x3D;&quot;isLoading&quot; class&#x3D;&quot;process-spinner&quot;&gt;
+  &lt;mat-progress-bar mode&#x3D;&quot;indeterminate&quot;&gt;&lt;/mat-progress-bar&gt;
+&lt;/div&gt;
+&lt;div [hidden]&#x3D;&quot;isLoading&quot;&gt;
+  &lt;table mat-table [dataSource]&#x3D;&quot;recordsDataSource&quot; matSort class&#x3D;&quot;full-width&quot;&gt;
+    &lt;ng-container *ngFor&#x3D;&quot;let col of filteredColumns&quot; [matColumnDef]&#x3D;&quot;col.id&quot;&gt;
+      &lt;th
+        mat-header-cell
+        mat-sort-header
+        *matHeaderCellDef
+        [matTooltip]&#x3D;&quot;col.tooltip&quot;
+        [matTooltipDisabled]&#x3D;&quot;!col.tooltip&quot;
+        [disabled]&#x3D;&quot;col.noSorting&quot;
+      &gt;
+        {{ col.label }}
+      &lt;/th&gt;
+      &lt;td
+        mat-cell
+        *matCellDef&#x3D;&quot;let row&quot;
+        (click)&#x3D;&quot;onRowClick(row)&quot;
+        style&#x3D;&quot;cursor: pointer&quot;
+      &gt;
+        &lt;ng-template
+          *ngIf&#x3D;&quot;!row.formGroup || row.formGroup.disabled || !col.edit&quot;
+          [appDynamicComponent]&#x3D;&quot;{
+            component: col.view,
+            config: {
+              value: row.record[col.id],
+              id: col.id,
+              entity: row.record,
+              config: col.additional
+            }
+          }&quot;
+        &gt;&lt;/ng-template&gt;
+        &lt;ng-template
+          *ngIf&#x3D;&quot;row.formGroup?.enabled &amp;&amp; col.edit&quot;
+          [appDynamicComponent]&#x3D;&quot;{
+            component: col.edit,
+            config: {
+              formFieldConfig: col,
+              propertySchema: row.record.getSchema().get(col.id),
+              formControl: row.formGroup.get(col.id)
+            }
+          }&quot;
+        &gt;
+        &lt;/ng-template&gt;
+      &lt;/td&gt;
+    &lt;/ng-container&gt;
+
+    &lt;ng-container matColumnDef&#x3D;&quot;actions&quot;&gt;
+      &lt;th
+        mat-header-cell
+        *matHeaderCellDef
+        [class.remove-padding-left]&#x3D;&quot;editable&quot;
+      &gt;
+        &lt;ng-container *ngIf&#x3D;&quot;editable&quot;&gt;
+          &lt;button
+            mat-icon-button
+            *appDisabledEntityOperation&#x3D;&quot;{
+              entity: getEntityConstructor(),
+              operation: &#x27;create&#x27;
+            }&quot;
+            class&#x3D;&quot;table-action-button&quot;
+            (click)&#x3D;&quot;create()&quot;
+          &gt;
+            &lt;fa-icon
+              style&#x3D;&quot;vertical-align: initial&quot;
+              aria-label&#x3D;&quot;add&quot;
+              icon&#x3D;&quot;plus-circle&quot;
+            &gt;&lt;/fa-icon&gt;
+          &lt;/button&gt;
+        &lt;/ng-container&gt;
+      &lt;/th&gt;
+      &lt;td mat-cell *matCellDef&#x3D;&quot;let rec&quot; [class.remove-padding-left]&#x3D;&quot;editable&quot;&gt;
+        &lt;div *ngIf&#x3D;&quot;editable&quot;&gt;
+          &lt;ng-container *ngIf&#x3D;&quot;!rec.formGroup || rec.formGroup.disabled&quot;&gt;
+            &lt;button
+              mat-icon-button
+              *appDisabledEntityOperation&#x3D;&quot;{
+                entity: rec.record,
+                operation: &#x27;update&#x27;
+              }&quot;
+              (click)&#x3D;&quot;edit(rec)&quot;
+            &gt;
+              &lt;fa-icon aria-label&#x3D;&quot;edit&quot; icon&#x3D;&quot;pen&quot;&gt;&lt;/fa-icon&gt;
+            &lt;/button&gt;
+          &lt;/ng-container&gt;
+          &lt;ng-container *ngIf&#x3D;&quot;rec.formGroup?.enabled&quot;&gt;
+            &lt;button
+              mat-icon-button
+              (click)&#x3D;&quot;save(rec)&quot;
+              angulartics2On&#x3D;&quot;click&quot;
+              [angularticsCategory]&#x3D;&quot;rec?.record?.getType()&quot;
+              angularticsAction&#x3D;&quot;subrecord_inlineedit_save&quot;
+            &gt;
+              &lt;fa-icon aria-label&#x3D;&quot;save&quot; icon&#x3D;&quot;check-circle&quot;&gt;&lt;/fa-icon&gt;
+            &lt;/button&gt;
+            &lt;button
+              mat-icon-button
+              (click)&#x3D;&quot;resetChanges(rec)&quot;
+              angulartics2On&#x3D;&quot;click&quot;
+              [angularticsCategory]&#x3D;&quot;rec?.record?.getType()&quot;
+              angularticsAction&#x3D;&quot;subrecord_inlineedit_cancel&quot;
+            &gt;
+              &lt;fa-icon aria-label&#x3D;&quot;cancel&quot; icon&#x3D;&quot;times-circle&quot;&gt;&lt;/fa-icon&gt;
+            &lt;/button&gt;
+            &lt;button
+              mat-icon-button
+              *appDisabledEntityOperation&#x3D;&quot;{
+                entity: rec.record,
+                operation: &#x27;delete&#x27;
+              }&quot;
+              (click)&#x3D;&quot;delete(rec)&quot;
+              angulartics2On&#x3D;&quot;click&quot;
+              [angularticsCategory]&#x3D;&quot;rec?.record?.getType()&quot;
+              angularticsAction&#x3D;&quot;subrecord_inlineedit_delete&quot;
+            &gt;
+              &lt;fa-icon aria-label&#x3D;&quot;delete&quot; icon&#x3D;&quot;trash&quot;&gt;&lt;/fa-icon&gt;
+            &lt;/button&gt;
+          &lt;/ng-container&gt;
+        &lt;/div&gt;
+      &lt;/td&gt;
+    &lt;/ng-container&gt;
+
+    &lt;tr mat-header-row *matHeaderRowDef&#x3D;&quot;columnsToDisplay&quot;&gt;&lt;/tr&gt;
+    &lt;tr
+      mat-row
+      *matRowDef&#x3D;&quot;let row; columns: columnsToDisplay&quot;
+      [style.background-color]&#x3D;&quot;getBackgroundColor?.(row.record)&quot;
+      class&#x3D;&quot;table-row&quot;
+    &gt;&lt;/tr&gt;
+  &lt;/table&gt;
+  &lt;app-list-paginator
+    [dataSource]&#x3D;&quot;recordsDataSource&quot;
+    [idForSavingPagination]&#x3D;&quot;idForSavingPagination&quot;
+  &gt;&lt;/app-list-paginator&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./entity-subrecord.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@use &quot;src/styles/variables/sizes&quot;;
+@use &quot;src/styles/variables/ndb-light-theme&quot; as theme;
+@use &quot;@angular/material&quot; as mat;
+
+.table-action-button {
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  margin: sizes.$small;
+  color: mat.get-color-from-palette(theme.$accent);
+}
+
+.mat-column-actions {
+  width: 1px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.table-row:hover {
+  background: #f5f5f5;
+}
+
+.process-spinner {
+  display: flex;
+  justify-content: center;
+}
+
+:host {
+  @include mat.elevation(1);
+  display: block;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div *ngIf="isLoading" class="process-spinner">  <mat-progress-bar mode="indeterminate"></mat-progress-bar></div><div [hidden]="isLoading">  <table mat-table [dataSource]="recordsDataSource" matSort class="full-width">    <ng-container *ngFor="let col of filteredColumns" [matColumnDef]="col.id">      <th        mat-header-cell        mat-sort-header        *matHeaderCellDef        [matTooltip]="col.tooltip"        [matTooltipDisabled]="!col.tooltip"        [disabled]="col.noSorting"      >        {{ col.label }}      </th>      <td        mat-cell        *matCellDef="let row"        (click)="onRowClick(row)"        style="cursor: pointer"      >        <ng-template          *ngIf="!row.formGroup || row.formGroup.disabled || !col.edit"          [appDynamicComponent]="{            component: col.view,            config: {              value: row.record[col.id],              id: col.id,              entity: row.record,              config: col.additional            }          }"        ></ng-template>        <ng-template          *ngIf="row.formGroup?.enabled && col.edit"          [appDynamicComponent]="{            component: col.edit,            config: {              formFieldConfig: col,              propertySchema: row.record.getSchema().get(col.id),              formControl: row.formGroup.get(col.id)            }          }"        >        </ng-template>      </td>    </ng-container>    <ng-container matColumnDef="actions">      <th        mat-header-cell        *matHeaderCellDef        [class.remove-padding-left]="editable"      >        <ng-container *ngIf="editable">          <button            mat-icon-button            *appDisabledEntityOperation="{              entity: getEntityConstructor(),              operation: \'create\'            }"            class="table-action-button"            (click)="create()"          >            <fa-icon              style="vertical-align: initial"              aria-label="add"              icon="plus-circle"            ></fa-icon>          </button>        </ng-container>      </th>      <td mat-cell *matCellDef="let rec" [class.remove-padding-left]="editable">        <div *ngIf="editable">          <ng-container *ngIf="!rec.formGroup || rec.formGroup.disabled">            <button              mat-icon-button              *appDisabledEntityOperation="{                entity: rec.record,                operation: \'update\'              }"              (click)="edit(rec)"            >              <fa-icon aria-label="edit" icon="pen"></fa-icon>            </button>          </ng-container>          <ng-container *ngIf="rec.formGroup?.enabled">            <button              mat-icon-button              (click)="save(rec)"              angulartics2On="click"              [angularticsCategory]="rec?.record?.getType()"              angularticsAction="subrecord_inlineedit_save"            >              <fa-icon aria-label="save" icon="check-circle"></fa-icon>            </button>            <button              mat-icon-button              (click)="resetChanges(rec)"              angulartics2On="click"              [angularticsCategory]="rec?.record?.getType()"              angularticsAction="subrecord_inlineedit_cancel"            >              <fa-icon aria-label="cancel" icon="times-circle"></fa-icon>            </button>            <button              mat-icon-button              *appDisabledEntityOperation="{                entity: rec.record,                operation: \'delete\'              }"              (click)="delete(rec)"              angulartics2On="click"              [angularticsCategory]="rec?.record?.getType()"              angularticsAction="subrecord_inlineedit_delete"            >              <fa-icon aria-label="delete" icon="trash"></fa-icon>            </button>          </ng-container>        </div>      </td>    </ng-container>    <tr mat-header-row *matHeaderRowDef="columnsToDisplay"></tr>    <tr      mat-row      *matRowDef="let row; columns: columnsToDisplay"      [style.background-color]="getBackgroundColor?.(row.record)"      class="table-row"    ></tr>  </table>  <app-list-paginator    [dataSource]="recordsDataSource"    [idForSavingPagination]="idForSavingPagination"  ></app-list-paginator></div></div>'
+    var COMPONENTS = [{'name': 'AccountPageComponent', 'selector': 'app-account-page'},{'name': 'ActivitiesOverviewComponent', 'selector': 'app-activities-overview'},{'name': 'ActivityAttendanceSectionComponent', 'selector': 'app-activity-attendance-section'},{'name': 'ActivityCardComponent', 'selector': 'app-activity-card'},{'name': 'AddDayAttendanceComponent', 'selector': 'app-add-day-attendance'},{'name': 'AdminComponent', 'selector': 'app-admin'},{'name': 'AlertStoriesHelperComponent', 'selector': 'app-alert-demo'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApplicationLoadingComponent', 'selector': ''},{'name': 'AppVersionComponent', 'selector': 'app-version'},{'name': 'AserComponent', 'selector': 'app-aser'},{'name': 'AttendanceBlockComponent', 'selector': 'app-attendance-block'},{'name': 'AttendanceCalendarComponent', 'selector': 'app-attendance-calendar'},{'name': 'AttendanceDayBlockComponent', 'selector': 'app-attendance-day-block]'},{'name': 'AttendanceDetailsComponent', 'selector': 'app-attendance-details'},{'name': 'AttendanceManagerComponent', 'selector': 'app-attendance-manager'},{'name': 'AttendanceStatusSelectComponent', 'selector': 'app-attendance-status-select'},{'name': 'AttendanceSummaryComponent', 'selector': 'app-attendance-summary'},{'name': 'AttendanceWeekDashboardComponent', 'selector': 'app-attendance-week-dashboard'},{'name': 'BackgroundProcessingIndicatorComponent', 'selector': 'app-background-processing-indicator'},{'name': 'BasicAutocompleteComponent', 'selector': 'app-basic-autocomplete'},{'name': 'BirthdayDashboardComponent', 'selector': 'app-birthday-dashboard'},{'name': 'BmiBlockComponent', 'selector': 'app-bmi-block'},{'name': 'BooleanInputComponent', 'selector': 'app-boolean-input'},{'name': 'ChangelogComponent', 'selector': ''},{'name': 'ChildBlockComponent', 'selector': 'app-child-block'},{'name': 'ChildBlockTooltipComponent', 'selector': 'app-child-block-tooltip'},{'name': 'ChildrenBmiDashboardComponent', 'selector': 'app-children-bmi-dashboard'},{'name': 'ChildrenListComponent', 'selector': 'app-children-list'},{'name': 'ChildSchoolOverviewComponent', 'selector': 'app-child-school-overview'},{'name': 'ComingSoonComponent', 'selector': 'app-coming-soon'},{'name': 'CompareRevComponent', 'selector': 'app-compare-rev'},{'name': 'ConfigImportComponent', 'selector': 'app-config-import'},{'name': 'ConfigureEnumPopupComponent', 'selector': 'app-configure-enum-popup'},{'name': 'ConfirmationDialogComponent', 'selector': 'app-confirmation-dialog'},{'name': 'ConflictResolutionListComponent', 'selector': 'app-conflict-resolution-list'},{'name': 'CustomIntervalComponent', 'selector': 'app-custom-interval'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DashboardListWidgetComponent', 'selector': 'app-dashboard-list-widget'},{'name': 'DashboardShortcutWidgetComponent', 'selector': 'app-dashboard-shortcut-widget'},{'name': 'DashboardWidgetComponent', 'selector': 'app-dashboard-widget'},{'name': 'DataImportComponent', 'selector': 'app-data-import'},{'name': 'DateRangeFilterComponent', 'selector': 'app-date-range-filter'},{'name': 'DateRangeFilterPanelComponent', 'selector': 'app-date-range-filter-panel'},{'name': 'DemoDataGeneratingProgressDialogComponent', 'selector': ''},{'name': 'DialogButtonsComponent', 'selector': 'app-dialog-buttons'},{'name': 'DialogCloseComponent', 'selector': 'app-dialog-close'},{'name': 'DisabledWrapperComponent', 'selector': 'app-disabled-wrapper'},{'name': 'DisplayAgeComponent', 'selector': 'app-display-age'},{'name': 'DisplayCheckmarkComponent', 'selector': 'app-display-tick'},{'name': 'DisplayConfigurableEnumComponent', 'selector': 'app-display-configurable-enum'},{'name': 'DisplayDateComponent', 'selector': 'app-display-date'},{'name': 'DisplayEntityArrayComponent', 'selector': 'app-display-entity-array'},{'name': 'DisplayEntityComponent', 'selector': 'app-display-entity'},{'name': 'DisplayMonthComponent', 'selector': 'app-display-month'},{'name': 'DisplayPercentageComponent', 'selector': 'app-display-percentage'},{'name': 'DisplayRecurringIntervalComponent', 'selector': 'app-display-recurring-interval'},{'name': 'DisplayTextComponent', 'selector': 'app-display-text'},{'name': 'DisplayTodoCompletionComponent', 'selector': 'app-display-todo-completion'},{'name': 'DisplayUnitComponent', 'selector': 'app-display-unit'},{'name': 'EditAgeComponent', 'selector': 'app-edit-age'},{'name': 'EditAttendanceComponent', 'selector': 'app-edit-attendance'},{'name': 'EditBooleanComponent', 'selector': 'app-edit-boolean'},{'name': 'EditConfigurableEnumComponent', 'selector': 'app-edit-configurable-enum'},{'name': 'EditDateComponent', 'selector': 'app-edit-date'},{'name': 'EditEntityArrayComponent', 'selector': 'app-edit-entity-array'},{'name': 'EditFileComponent', 'selector': 'app-edit-file'},{'name': 'EditLocationComponent', 'selector': 'app-edit-location'},{'name': 'EditLongTextComponent', 'selector': 'app-edit-long-text'},{'name': 'EditMonthComponent', 'selector': 'app-edit-month'},{'name': 'EditNumberComponent', 'selector': 'app-edit-number'},{'name': 'EditPhotoComponent', 'selector': 'app-edit-photo'},{'name': 'EditProgressDashboardComponent', 'selector': 'app-edit-progress-dashboard'},{'name': 'EditRecurringIntervalComponent', 'selector': 'app-edit-recurring-interval'},{'name': 'EditSingleEntityComponent', 'selector': 'app-edit-single-entity'},{'name': 'EditTextComponent', 'selector': 'app-edit-text'},{'name': 'EditTextWithAutocompleteComponent', 'selector': 'app-edit-text-with-autocomplete'},{'name': 'EducationalMaterialComponent', 'selector': 'app-educational-material'},{'name': 'EntityCountDashboardComponent', 'selector': 'app-entity-count-dashboard'},{'name': 'EntityDetailsComponent', 'selector': 'app-entity-details'},{'name': 'EntityFormComponent', 'selector': 'app-entity-form'},{'name': 'EntityListComponent', 'selector': 'app-entity-list'},{'name': 'EntityPropertyViewComponent', 'selector': 'app-entity-property-view'},{'name': 'EntitySelectComponent', 'selector': 'app-entity-select'},{'name': 'EntitySubrecordComponent', 'selector': 'app-entity-subrecord'},{'name': 'EnumDropdownComponent', 'selector': 'app-enum-dropdown'},{'name': 'ErrorHintComponent', 'selector': 'app-error-hint'},{'name': 'FaDynamicIconComponent', 'selector': 'app-fa-dynamic-icon'},{'name': 'FilterComponent', 'selector': 'app-filter'},{'name': 'FilterOverlayComponent', 'selector': 'app-filter-overlay'},{'name': 'FormComponent', 'selector': 'app-form'},{'name': 'GroupedChildAttendanceComponent', 'selector': 'app-grouped-child-attendance'},{'name': 'HealthCheckupComponent', 'selector': 'app-health-checkup'},{'name': 'HistoricalDataComponent', 'selector': 'app-historical-data'},{'name': 'ImagePopupComponent', 'selector': 'app-image-popup'},{'name': 'ImportantNotesDashboardComponent', 'selector': 'app-important-notes-dashboard'},{'name': 'InputFileComponent', 'selector': 'app-input-file'},{'name': 'LanguageSelectComponent', 'selector': 'app-language-select'},{'name': 'ListFilterComponent', 'selector': 'app-list-filter'},{'name': 'ListPaginatorComponent', 'selector': 'app-list-paginator'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MapComponent', 'selector': 'app-map'},{'name': 'MapPopupComponent', 'selector': 'app-map-popup'},{'name': 'MapPropertiesPopupComponent', 'selector': 'app-map-properties-popup'},{'name': 'MarkdownPageComponent', 'selector': 'app-markdown-page'},{'name': 'MatchingEntitiesComponent', 'selector': 'app-matching-entities'},{'name': 'NavigationComponent', 'selector': 'app-navigation'},{'name': 'NoteAttendanceCountBlockComponent', 'selector': 'app-note-attendance-count-block'},{'name': 'NoteDetailsComponent', 'selector': 'app-note-details'},{'name': 'NotesDashboardComponent', 'selector': 'app-no-recent-notes-dashboard'},{'name': 'NotesManagerComponent', 'selector': 'app-notes-manager'},{'name': 'NotesRelatedToEntityComponent', 'selector': 'app-notes-related-to-entity'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'ObjectTableComponent', 'selector': 'app-object-table'},{'name': 'PasswordFormComponent', 'selector': 'app-password-form'},{'name': 'PasswordResetComponent', 'selector': 'app-password-reset'},{'name': 'PillComponent', 'selector': 'app-pill'},{'name': 'PrimaryActionComponent', 'selector': 'app-primary-action'},{'name': 'ProgressComponent', 'selector': 'app-progress'},{'name': 'ProgressDashboardComponent', 'selector': 'app-progress-dashboard'},{'name': 'PublicFormComponent', 'selector': 'app-public-form'},{'name': 'PwaInstallComponent', 'selector': 'app-pwa-install'},{'name': 'ReadonlyFunctionComponent', 'selector': 'app-readonly-function'},{'name': 'RecentAttendanceBlocksComponent', 'selector': 'app-recent-attendance-blocks'},{'name': 'RelatedEntitiesComponent', 'selector': 'app-related-entities'},{'name': 'ReportingComponent', 'selector': 'app-reporting'},{'name': 'ReportRowComponent', 'selector': 'app-report-row'},{'name': 'RollCallComponent', 'selector': 'app-roll-call'},{'name': 'RollCallSetupComponent', 'selector': 'app-roll-call-setup'},{'name': 'RollCallTabComponent', 'selector': 'app-roll-call-tab'},{'name': 'RowDetailsComponent', 'selector': 'app-row-details'},{'name': 'SchoolBlockComponent', 'selector': 'app-school-block'},{'name': 'SearchComponent', 'selector': 'app-search'},{'name': 'SelectReportComponent', 'selector': 'app-select-report'},{'name': 'ShowFileComponent', 'selector': 'app-show-file'},{'name': 'SupportComponent', 'selector': 'app-support'},{'name': 'SyncStatusComponent', 'selector': 'app-sync-status'},{'name': 'TemplateTooltipComponent', 'selector': 'TemplateTooltipComponent.SELECTOR'},{'name': 'TodoCompletionComponent', 'selector': 'app-todo-completion'},{'name': 'TodoDetailsComponent', 'selector': 'app-todo-details'},{'name': 'TodoListComponent', 'selector': 'app-todo-list'},{'name': 'TodosDashboardComponent', 'selector': 'app-todos-dashboard'},{'name': 'TodosRelatedToEntityComponent', 'selector': 'app-todos-related-to-entity'},{'name': 'UiComponent', 'selector': 'app-ui'},{'name': 'UserAccountComponent', 'selector': 'app-user-account'},{'name': 'UserSecurityComponent', 'selector': 'app-user-security'},{'name': 'ViewDistanceComponent', 'selector': 'app-view-distance'},{'name': 'ViewFileComponent', 'selector': 'app-view-file'},{'name': 'ViewLocationComponent', 'selector': 'app-view-location'},{'name': 'ViewTitleComponent', 'selector': 'app-view-title'},{'name': 'WidgetContentComponent', 'selector': 'app-widget-content'}];
+    var DIRECTIVES = [{'name': 'BorderHighlightDirective', 'selector': '[appBorderHighlight]'},{'name': 'ConfigurableEnumDirective', 'selector': '[appConfigurableEnum]'},{'name': 'CustomFormControlDirective', 'selector': ''},{'name': 'DisableEntityOperationDirective', 'selector': '[appDisabledEntityOperation]'},{'name': 'DynamicComponentDirective', 'selector': '[appDynamicComponent]'},{'name': 'EditComponent', 'selector': ''},{'name': 'ExportDataDirective', 'selector': '[appExportData]'},{'name': 'TabStateMemoDirective', 'selector': '[appTabStateMemo]'},{'name': 'TemplateTooltipDirective', 'selector': '[appTemplateTooltip]'},{'name': 'ViewDirective', 'selector': ''}];
+    var ACTUAL_COMPONENT = {'name': 'EntitySubrecordComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'EntitySubrecordComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

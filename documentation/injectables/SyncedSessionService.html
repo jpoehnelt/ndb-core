@@ -1,0 +1,1446 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ndb-core documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">ndb-core documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >SyncedSessionService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/core/session/session-service/synced-session.service.ts</code>
+        </p>
+
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>A synced session creates and manages a LocalSession and a RemoteSession
+and handles the setup of synchronisation.</p>
+<p>also see
+<a href="/additional-documentation/concepts/session-and-authentication-system.html">Session Handling, Authentication &amp; Synchronisation</a></p>
+
+            </p>
+
+            <p class="comment">
+                <h3>Extends</h3>
+            </p>
+            <p class="comment">
+                        <code><a href="../classes/SessionService.html" target="_self" >SessionService</a></code>
+            </p>
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Static</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#LAST_SYNC_KEY" >LAST_SYNC_KEY</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#cancelLiveSync" >cancelLiveSync</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#cancelLoginOfflineRetry" >cancelLoginOfflineRetry</a>
+                            </li>
+                            <li>
+                                <a href="#checkForValidSession" >checkForValidSession</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#checkPassword" >checkPassword</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getCurrentUser" >getCurrentUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getDatabase" >getDatabase</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#handleSuccessfulLogin" >handleSuccessfulLogin</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#liveSync" >liveSync</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#liveSyncDeferred" >liveSyncDeferred</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#login" >login</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#logout" >logout</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#sync" >sync</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isLoggedIn" >isLoggedIn</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(loggingService: <a href="../injectables/LoggingService.html" target="_self">LoggingService</a>, localSession: <a href="../injectables/LocalSession.html" target="_self">LocalSession</a>, remoteSession: <a href="../injectables/RemoteSession.html" target="_self">RemoteSession</a>, authService: <a href="../classes/AuthService.html" target="_self">AuthService</a>, location: Location)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/core/session/session-service/synced-session.service.ts:49</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>loggingService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LoggingService.html" target="_self" >LoggingService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>localSession</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LocalSession.html" target="_self" >LocalSession</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>remoteSession</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/RemoteSession.html" target="_self" >RemoteSession</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>location</td>
+                                                  
+                                                        <td>
+                                                                    <code>Location</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cancelLiveSync"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>cancelLiveSync</b></span>
+                        <a href="#cancelLiveSync"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>cancelLiveSync()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="273"
+                            class="link-to-prism">src/app/core/session/session-service/synced-session.service.ts:273</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Cancels a currently running liveSync or a liveSync scheduled to start in the future.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cancelLoginOfflineRetry"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>cancelLoginOfflineRetry</b></span>
+                        <a href="#cancelLoginOfflineRetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>cancelLoginOfflineRetry()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="264"
+                            class="link-to-prism">src/app/core/session/session-service/synced-session.service.ts:264</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Cancels a pending login retry scheduled to start in the future.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkForValidSession"></a>
+                    <span class="name">
+                        <span ><b>checkForValidSession</b></span>
+                        <a href="#checkForValidSession"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkForValidSession()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="73"
+                            class="link-to-prism">src/app/core/session/session-service/synced-session.service.ts:73</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Do log in automatically if there is still a valid CouchDB cookie from last login with username and password</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkPassword"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>checkPassword</b></span>
+                        <a href="#checkPassword"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkPassword(username: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, password: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/SessionService.html" target="_self" >SessionService</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/SessionService.html#source" target="_self" >SessionService:182</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>username</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>password</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCurrentUser"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getCurrentUser</b></span>
+                        <a href="#getCurrentUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getCurrentUser()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/SessionService.html" target="_self" >SessionService</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/SessionService.html#source" target="_self" >SessionService:178</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/AuthUser.html" target="_self" >AuthUser</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDatabase"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getDatabase</b></span>
+                        <a href="#getDatabase"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getDatabase()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/SessionService.html" target="_self" >SessionService</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/SessionService.html#source" target="_self" >SessionService:287</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get the local database instance that should be used for regular data access.
+als see <a href="../classes/SessionService.html">SessionService</a></p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Database.html" target="_self" >Database</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleSuccessfulLogin"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>handleSuccessfulLogin</b></span>
+                        <a href="#handleSuccessfulLogin"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>handleSuccessfulLogin(userObject: <a href="../interfaces/AuthUser.html" target="_self">AuthUser</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/SessionService.html" target="_self" >SessionService</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/SessionService.html#source" target="_self" >SessionService:80</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>userObject</td>
+                                    <td>
+                                                <code><a href="../interfaces/AuthUser.html" target="_self" >AuthUser</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="liveSync"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>liveSync</b></span>
+                        <a href="#liveSync"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>liveSync()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="207"
+                            class="link-to-prism">src/app/core/session/session-service/synced-session.service.ts:207</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Start live sync in background.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="liveSyncDeferred"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>liveSyncDeferred</b></span>
+                        <a href="#liveSyncDeferred"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>liveSyncDeferred(timeout: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="257"
+                            class="link-to-prism">src/app/core/session/session-service/synced-session.service.ts:257</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Schedules liveSync to be started.
+This method should be used to start the liveSync after the initial non-live sync,
+so the browser makes a round trip to the UI and hides the potentially visible first-sync dialog.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>timeout</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>1000</code>
+                                    </td>
+
+                                    <td>
+                                        <p>ms to wait before starting the liveSync</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="login"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>login</b></span>
+                        <a href="#login"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>login(username: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, password: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/SessionService.html" target="_self" >SessionService</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/SessionService.html#source" target="_self" >SessionService:101</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Perform a login. The result will only be the login at the local DB, as we might be offline.
+Calling this function will trigger a login in the background.</p>
+<ul>
+<li>If it is successful, a sync is performed in the background</li>
+<li>If it fails due to wrong credentials, yet the local login was successful somehow, we fail local login after the fact</li>
+</ul>
+<p>If the localSession is empty, the local login waits for the result of the sync triggered by the remote login (see local-session.ts).
+If the remote login fails for some reason, this sync will never be performed, which is why it must be failed manually here
+to abort the local login and prevent a deadlock.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>username</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Username</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>password</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Password</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/enumerations.html#LoginState" target="_self" >Promise&lt;LoginState&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>promise resolving with the local LoginState</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logout"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>logout</b></span>
+                        <a href="#logout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>logout()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/SessionService.html" target="_self" >SessionService</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/SessionService.html#source" target="_self" >SessionService:295</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Logout and stop any existing sync.
+also see <a href="../classes/SessionService.html">SessionService</a></p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sync"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>sync</b></span>
+                        <a href="#sync"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>sync()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="188"
+                            class="link-to-prism">src/app/core/session/session-service/synced-session.service.ts:188</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>see <a href="../classes/SessionService.html">SessionService</a></p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isLoggedIn"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>isLoggedIn</b></span>
+                        <a href="#isLoggedIn"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isLoggedIn()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Inherited from         <code><a href="../classes/SessionService.html" target="_self" >SessionService</a></code>
+</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                        <div class="io-line">Defined in         <code><a href="../classes/SessionService.html#source" target="_self" >SessionService:78</a></code>
+</div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get the session status - whether a user is authenticated currently.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="LAST_SYNC_KEY"></a>
+                    <span class="name">
+                            <span class="modifier">Static</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>LAST_SYNC_KEY</b></span>
+                        <a href="#LAST_SYNC_KEY"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;LAST_SYNC&quot;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/core/session/session-service/synced-session.service.ts:43</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Inject, Injectable } from &quot;@angular/core&quot;;
+
+import { SessionService } from &quot;./session.service&quot;;
+import { LocalSession } from &quot;./local-session&quot;;
+import { RemoteSession } from &quot;./remote-session&quot;;
+import { LoginState } from &quot;../session-states/login-state.enum&quot;;
+import { Database } from &quot;../../database/database&quot;;
+import { SyncState } from &quot;../session-states/sync-state.enum&quot;;
+import { LoggingService } from &quot;../../logging/logging.service&quot;;
+import { waitForChangeTo } from &quot;../session-states/session-utils&quot;;
+import { zip } from &quot;rxjs&quot;;
+import { filter } from &quot;rxjs/operators&quot;;
+import { LOCATION_TOKEN } from &quot;../../../utils/di-tokens&quot;;
+import { AuthService } from &quot;../auth/auth.service&quot;;
+import { AuthUser } from &quot;./auth-user&quot;;
+
+/**
+ * A synced session creates and manages a LocalSession and a RemoteSession
+ * and handles the setup of synchronisation.
+ *
+ * also see
+ * [Session Handling, Authentication &amp; Synchronisation]{@link /additional-documentation/concepts/session-and-authentication-system.html}
+ */
+@Injectable()
+export class SyncedSessionService extends SessionService {
+  static readonly LAST_SYNC_KEY &#x3D; &quot;LAST_SYNC&quot;;
+  private readonly LOGIN_RETRY_TIMEOUT &#x3D; 60000;
+  private readonly POUCHDB_SYNC_BATCH_SIZE &#x3D; 500;
+
+  private _liveSyncHandle: any;
+  private _liveSyncScheduledHandle: any;
+  private _offlineRetryLoginScheduleHandle: any;
+
+  constructor(
+    private loggingService: LoggingService,
+    private localSession: LocalSession,
+    private remoteSession: RemoteSession,
+    private authService: AuthService,
+    @Inject(LOCATION_TOKEN) private location: Location
+  ) {
+    super();
+    this.syncState
+      .pipe(filter((state) &#x3D;&gt; state &#x3D;&#x3D;&#x3D; SyncState.COMPLETED))
+      .subscribe(() &#x3D;&gt;
+        localStorage.setItem(
+          SyncedSessionService.LAST_SYNC_KEY,
+          new Date().toISOString()
+        )
+      );
+    this.checkForValidSession();
+  }
+
+  /**
+   * Do log in automatically if there is still a valid CouchDB cookie from last login with username and password
+   */
+  checkForValidSession() {
+    this.authService
+      .autoLogin()
+      .then((user) &#x3D;&gt; this.handleSuccessfulLogin(user))
+      .catch(() &#x3D;&gt; undefined);
+  }
+
+  async handleSuccessfulLogin(userObject: AuthUser) {
+    this.startSyncAfterLocalAndRemoteLogin();
+    await this.localSession.handleSuccessfulLogin(userObject);
+    // The app is ready to be used once the local session is logged in
+    this.loginState.next(LoginState.LOGGED_IN);
+    await this.remoteSession.handleSuccessfulLogin(userObject);
+  }
+
+  /**
+   * Perform a login. The result will only be the login at the local DB, as we might be offline.
+   * Calling this function will trigger a login in the background.
+   * - If it is successful, a sync is performed in the background
+   * - If it fails due to wrong credentials, yet the local login was successful somehow, we fail local login after the fact
+   *
+   * If the localSession is empty, the local login waits for the result of the sync triggered by the remote login (see local-session.ts).
+   * If the remote login fails for some reason, this sync will never be performed, which is why it must be failed manually here
+   * to abort the local login and prevent a deadlock.
+   * @param username Username
+   * @param password Password
+   * @returns promise resolving with the local LoginState
+   */
+  public async login(username: string, password: string): Promise&lt;LoginState&gt; {
+    this.cancelLoginOfflineRetry(); // in case this is running in the background
+    this.syncState.next(SyncState.UNSYNCED);
+
+    const remoteLogin &#x3D; this.remoteSession
+      .login(username, password)
+      .then((state) &#x3D;&gt; {
+        this.updateLocalUser(password, username);
+        return state;
+      });
+
+    this.startSyncAfterLocalAndRemoteLogin();
+
+    const localLoginState &#x3D; await this.localSession.login(username, password);
+
+    if (localLoginState &#x3D;&#x3D;&#x3D; LoginState.LOGGED_IN) {
+      this.loginState.next(LoginState.LOGGED_IN);
+      remoteLogin.then((loginState) &#x3D;&gt; {
+        if (loginState &#x3D;&#x3D;&#x3D; LoginState.LOGIN_FAILED) {
+          this.localSession.removeUser(username);
+          this.logout();
+        }
+        if (loginState &#x3D;&#x3D;&#x3D; LoginState.UNAVAILABLE) {
+          this.retryLoginWhileOffline(username, password);
+        }
+      });
+    } else {
+      const remoteLoginState &#x3D; await remoteLogin;
+      if (remoteLoginState &#x3D;&#x3D;&#x3D; LoginState.LOGGED_IN) {
+        // New user or password changed
+        const localLoginRetry &#x3D; await this.localSession.login(
+          username,
+          password
+        );
+        this.loginState.next(localLoginRetry);
+      } else if (
+        remoteLoginState &#x3D;&#x3D;&#x3D; LoginState.UNAVAILABLE &amp;&amp;
+        localLoginState &#x3D;&#x3D;&#x3D; LoginState.UNAVAILABLE
+      ) {
+        // Offline with no local user
+        this.loginState.next(LoginState.UNAVAILABLE);
+      } else {
+        // Password and or username wrong
+        this.loginState.next(LoginState.LOGIN_FAILED);
+      }
+    }
+    return this.loginState.value;
+  }
+
+  private startSyncAfterLocalAndRemoteLogin() {
+    zip(
+      this.localSession.loginState.pipe(waitForChangeTo(LoginState.LOGGED_IN)),
+      this.remoteSession.loginState.pipe(waitForChangeTo(LoginState.LOGGED_IN))
+    ).subscribe(() &#x3D;&gt; this.startSync());
+  }
+
+  private retryLoginWhileOffline(username: string, password: string) {
+    this._offlineRetryLoginScheduleHandle &#x3D; setTimeout(() &#x3D;&gt; {
+      this.login(username, password);
+    }, this.LOGIN_RETRY_TIMEOUT);
+  }
+
+  private updateLocalUser(password: string, loginName: string) {
+    // Update local user object
+    const remoteUser &#x3D; this.remoteSession.getCurrentUser();
+    if (remoteUser) {
+      this.localSession.saveUser(remoteUser, password, loginName);
+    }
+  }
+
+  private startSync(): Promise&lt;any&gt; {
+    // Call live syn even when initial sync fails
+    return this.sync()
+      .catch((err) &#x3D;&gt; this.loggingService.error(&#x60;Sync failed: ${err}&#x60;))
+      .finally(() &#x3D;&gt; this.liveSyncDeferred());
+  }
+
+  public getCurrentUser(): AuthUser {
+    return this.localSession.getCurrentUser();
+  }
+
+  public checkPassword(username: string, password: string): boolean {
+    // This only checks the password against locally saved users
+    return this.localSession.checkPassword(username, password);
+  }
+
+  /** see {@link SessionService} */
+  public async sync(): Promise&lt;any&gt; {
+    this.syncState.next(SyncState.STARTED);
+    try {
+      const localPouchDB &#x3D; this.localSession.getDatabase().getPouchDB();
+      const remotePouchDB &#x3D; this.remoteSession.getDatabase().getPouchDB();
+      const result &#x3D; await localPouchDB.sync(remotePouchDB, {
+        batch_size: this.POUCHDB_SYNC_BATCH_SIZE,
+      });
+      this.syncState.next(SyncState.COMPLETED);
+      return result;
+    } catch (error) {
+      this.syncState.next(SyncState.FAILED);
+      throw error; // rethrow, so later Promise-handling lands in .catch, too
+    }
+  }
+
+  /**
+   * Start live sync in background.
+   */
+  public liveSync() {
+    this.cancelLiveSync(); // cancel any liveSync that may have been alive before
+    this.syncState.next(SyncState.STARTED);
+    const localPouchDB &#x3D; this.localSession.getDatabase().getPouchDB();
+    const remotePouchDB &#x3D; this.remoteSession.getDatabase().getPouchDB();
+    this._liveSyncHandle &#x3D; localPouchDB.sync(remotePouchDB, {
+      live: true,
+      retry: true,
+    });
+    this._liveSyncHandle
+      .on(&quot;paused&quot;, (info) &#x3D;&gt; {
+        // replication was paused: either because sync is finished or because of a failed sync (mostly due to lost connection). info is empty.
+        if (this.remoteSession.loginState.value &#x3D;&#x3D;&#x3D; LoginState.LOGGED_IN) {
+          this.syncState.next(SyncState.COMPLETED);
+          // We might end up here after a failed sync that is not due to offline errors.
+          // It shouldn&#x27;t happen too often, as we have an initial non-live sync to catch those situations, but we can&#x27;t find that out here
+        }
+      })
+      .on(&quot;active&quot;, (info) &#x3D;&gt; {
+        // replication was resumed: either because new things to sync or because connection is available again. info contains the direction
+        this.syncState.next(SyncState.STARTED);
+      })
+      .on(&quot;error&quot;, this.handleFailedSync())
+      .on(&quot;complete&quot;, (info) &#x3D;&gt; {
+        this.loggingService.info(
+          &#x60;Live sync completed: ${JSON.stringify(info)}&#x60;
+        );
+        this.syncState.next(SyncState.COMPLETED);
+      });
+  }
+
+  private handleFailedSync() {
+    return (info) &#x3D;&gt; {
+      if (this.isLoggedIn()) {
+        this.syncState.next(SyncState.FAILED);
+        const lastAuth &#x3D; localStorage.getItem(AuthService.LAST_AUTH_KEY);
+        this.loggingService.warn(
+          &#x60;Live sync failed (last auth ${lastAuth}): ${JSON.stringify(info)}&#x60;
+        );
+        this.liveSync();
+      }
+    };
+  }
+
+  /**
+   * Schedules liveSync to be started.
+   * This method should be used to start the liveSync after the initial non-live sync,
+   * so the browser makes a round trip to the UI and hides the potentially visible first-sync dialog.
+   * @param timeout ms to wait before starting the liveSync
+   */
+  public liveSyncDeferred(timeout &#x3D; 1000) {
+    this._liveSyncScheduledHandle &#x3D; setTimeout(() &#x3D;&gt; this.liveSync(), timeout);
+  }
+
+  /**
+   * Cancels a pending login retry scheduled to start in the future.
+   */
+  public cancelLoginOfflineRetry() {
+    if (this._offlineRetryLoginScheduleHandle) {
+      clearTimeout(this._offlineRetryLoginScheduleHandle);
+    }
+  }
+
+  /**
+   * Cancels a currently running liveSync or a liveSync scheduled to start in the future.
+   */
+  public cancelLiveSync() {
+    if (this._liveSyncScheduledHandle) {
+      clearTimeout(this._liveSyncScheduledHandle);
+    }
+    if (this._liveSyncHandle) {
+      this._liveSyncHandle.cancel();
+    }
+    this.syncState.next(SyncState.UNSYNCED);
+  }
+
+  /**
+   * Get the local database instance that should be used for regular data access.
+   * als see {@link SessionService}
+   */
+  public getDatabase(): Database {
+    return this.localSession.getDatabase();
+  }
+
+  /**
+   * Logout and stop any existing sync.
+   * also see {@link SessionService}
+   */
+  public async logout() {
+    this.cancelLoginOfflineRetry();
+    this.localSession.logout();
+    await this.remoteSession.logout();
+    this.cancelLiveSync();
+    this.location.reload();
+    this.loginState.next(LoginState.LOGGED_OUT);
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'SyncedSessionService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
